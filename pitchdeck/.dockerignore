@@ -1,0 +1,12 @@
+# Regenerated inside the build — never ship from the host.
+node_modules
+dist
+.tanstack
+
+# Tooling noise that would bust the build cache for no reason.
+.git
+.gitignore
+Dockerfile
+.dockerignore
+*.log
+.DS_Store

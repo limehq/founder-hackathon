@@ -1,10 +1,5 @@
-import { createFileRoute } from '@tanstack/react-router'
 import { useEffect, useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
-
-export const Route = createFileRoute('/')({
-  component: PitchDeck,
-})
 
 type SlideProps = {
   children: ReactNode
@@ -146,7 +141,7 @@ const askItems = [
   'A mentor for DACH food law',
 ]
 
-function PitchDeck() {
+export default function PitchDeck() {
   const slides = useMemo(
     () => [
       { label: 'Problem', element: <ProblemSlide /> },

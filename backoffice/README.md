@@ -36,6 +36,40 @@ npm run preview      # serve dist/ on http://localhost:5173
 > module pipeline. (This also means the app can't be opened as a bare `file://`; it must
 > be served over HTTP, which `npm run dev`/`preview` handle.)
 
+## Run in a container
+
+A two-stage [`Dockerfile`](./Dockerfile) builds the static bundle with Node, then
+serves it with nginx (`nginx.conf`). The final image is ~50 MB and listens on port 80.
+The app is served under **`/backoffice/`** (asset paths are relative, so it's
+base-path-agnostic — `npm run dev` still serves it at `/`).
+
+```bash
+docker build -t caterists-backoffice .
+docker run --rm -p 8089:80 caterists-backoffice   # → http://localhost:8089/backoffice/
+```
+
+Or with Compose:
+
+```bash
+docker compose up --build                          # → http://localhost:8089/backoffice/
+```
+
+> To run both apps together behind one entry point, use the stack compose at the
+> repo root instead (see the top-level `README.md`).
+
+### Deploy on Coolify
+
+Point a new Coolify resource at this repo with **Base Directory** `backoffice`:
+
+- **Dockerfile** build pack (recommended for this single static container) — Coolify
+  builds the `Dockerfile`, detects the exposed port (80), and you attach a domain. No
+  env vars needed; the app is fully in-memory and self-contained.
+- **Docker Compose** build pack — point it at `docker-compose.yml` instead; Coolify
+  manages the public port/domain via its proxy (the `8080` host mapping is for local
+  use only).
+
+The image's `HEALTHCHECK` hits `/`, so Coolify's health status reflects nginx being up.
+
 ## The demo flow (hero)
 
 1. The dashboard loads on the **calm** layout. About 4.5s in, a **live request from
@@ -73,4 +107,5 @@ The entry `index.html` lives at the project root and pulls these in.
 - The floating **Tweaks** panel (`public/lib/tweaks-panel.jsx`) is design-tool chrome;
   it stays hidden unless activated by a Claude Design host, so it doesn't appear here.
 - **Deploy** — `npm run build` emits a plain static `dist/`. Drop it on any static host
-  (Vercel, Netlify, GitHub Pages) and point at `index.html`.
+  (Vercel, Netlify, GitHub Pages) and point at `index.html`, or ship the container (see
+  [Run in a container](#run-in-a-container) for Coolify).

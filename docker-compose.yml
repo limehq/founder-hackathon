@@ -1,0 +1,42 @@
+# Full Caterists stack: a single gateway fronting two static apps.
+#
+#   /backoffice/  → back office
+#   /pitch/       → pitch deck
+#   /             → redirects to /backoffice/
+#
+# Coolify deploys THIS file as a "Docker Compose" resource. It auto-creates a
+# private network (services reach each other by name), so we declare none. To go
+# public, attach your domain to the `gateway` service in Coolify's UI (Domains
+# field) — Coolify's proxy routes it to the gateway's port 80. No host `ports` are
+# published here on purpose: that avoids host-port collisions on the Coolify server
+# and keeps traffic behind the proxy (TLS). For local runs, docker-compose.override.yml
+# publishes the gateway on a host port.
+services:
+  backoffice:
+    build:
+      context: ./backoffice
+    image: caterists-backoffice
+    restart: unless-stopped
+    expose:
+      - "80"
+
+  pitchdeck:
+    build:
+      context: ./pitchdeck
+    image: caterists-pitchdeck
+    restart: unless-stopped
+    expose:
+      - "80"
+
+  gateway:
+    build:
+      context: ./gateway
+    image: caterists-gateway
+    restart: unless-stopped
+    expose:
+      - "80"
+    depends_on:
+      backoffice:
+        condition: service_healthy
+      pitchdeck:
+        condition: service_healthy

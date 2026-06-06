@@ -1,0 +1,10 @@
+# Local-only overrides, auto-merged by `docker compose up` (NOT used by Coolify,
+# which deploys docker-compose.yml on its own and routes your domain via its proxy).
+#
+# Publishes the gateway on a host port so you can hit the stack locally:
+#   http://localhost:8088/backoffice/
+#   http://localhost:8088/pitch/
+services:
+  gateway:
+    ports:
+      - "8088:80"

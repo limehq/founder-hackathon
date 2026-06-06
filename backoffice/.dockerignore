@@ -1,0 +1,13 @@
+# Regenerated inside the build — never ship from the host.
+node_modules
+dist
+
+# VCS / tooling noise that would bust the build cache for no reason.
+.git
+.gitignore
+Dockerfile
+.dockerignore
+docker-compose.yml
+README.md
+*.log
+.DS_Store

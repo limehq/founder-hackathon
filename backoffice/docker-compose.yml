@@ -1,0 +1,15 @@
+# Convenience for local runs: `docker compose up --build` → http://localhost:8089/backoffice/
+#
+# On Coolify you can either use the plain Dockerfile build pack (recommended for
+# a single static container) or point a "Docker Compose" resource at this file —
+# Coolify manages the public port/domain via its proxy, so the host port below
+# only matters for local use.
+services:
+  backoffice:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: caterists-backoffice
+    ports:
+      - "8089:80"
+    restart: unless-stopped
