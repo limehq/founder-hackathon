@@ -1,66 +1,71 @@
 import { useEffect, useMemo, useState } from 'react'
 import type { ReactNode } from 'react'
+import { ArrowLeft, ArrowRight, Check, Clock, Sparkles, X } from 'lucide-react'
+
+type Tone = 'cream' | 'purple'
+type Accent = 'coral' | 'sky' | 'purple' | 'pink' | 'lime' | 'yellow'
 
 type SlideProps = {
   children: ReactNode
   eyebrow: string
   tag?: string
-  tone?: 'blue' | 'white'
+  tone?: Tone
+  accent?: Accent
 }
 
 // 1 · Hook + Problem
-const persona = 'Office managers, team assistants, event organizers and coworking teams in Hamburg.'
+const persona = 'Office managers, team assistants, event organizers, coworking teams in Hamburg'
 
 const todaySteps = [
   'Call five caterers, one by one',
-  'Chase prices, allergens and delivery windows by phone',
-  'Still get no binding commitment',
-  'If one drops out, it all starts over',
-  'Local micro-caterers are underserved',
+  'Chase prices, allergens, delivery windows by phone',
+  'Still no binding commitment',
+  'One drops out, start over',
+  'Local micro-caterers underserved',
 ]
 
 const supplyNote =
-  'They have the talent and capacity, but no steady stream of demand that matches their specialty.'
+  'Talent and capacity, but no steady demand matching their specialty'
 
 // 2 · Solution
 const solutionSteps = [
-  'A form or free text captures date, headcount, diet, allergens, budget, location and delivery window.',
-  'AI intake turns it into a checkable, fixed-price brief.',
-  'Hard filters send it to every matching, verified cook at once.',
-  'First binding accept: the first cook to commit closes the order.',
-  'If a cook cancels, the order goes back to the pool automatically.',
+  'Form or free text: date, headcount, diet, allergens, budget, location, delivery window',
+  'AI intake builds a checkable, fixed-price brief',
+  'Hard filters fire it to every matching, verified cook at once',
+  'First binding accept closes the order',
+  'Cook cancels, order auto re-broadcasts to the network',
 ]
 
 // 3 · Live Demo
 const demoSteps = [
-  'An office manager needs lunch for 35 people.',
-  'The request goes live to matching, verified cooks in Hamburg.',
-  'Brigitte commits first, and the order closes for everyone else.',
-  'In chat, both sides sort out setup, delivery and special requests.',
-  'Confirmation and invoice are ready. If she cancels, it re-broadcasts to Mehmet.',
+  'Office manager needs lunch for 35 people',
+  'Request goes live to matching, verified cooks in Hamburg',
+  'Brigitte commits first, order closes for everyone else',
+  'Chat sorts setup, delivery, special requests',
+  'Confirmation and invoice ready. She cancels, auto re-broadcast to Mehmet.',
 ]
 
 // 4 · Market
 const segments = ['Office lunches', 'Workshops and meetings', 'Coworking events', 'One-off events for 15 to 50 people']
 
 const marketPoints = [
-  'MVP: Hamburg, office / coworking / event teams.',
-  'Supply: verified local micro-caterers in a curated pool.',
-  'Standard packages plus add-ons: veggie, vegan, gluten-free, dessert, drinks.',
-  'DACH expansion stays on the roadmap, not a launch promise.',
+  'MVP: Hamburg, office / coworking / event teams',
+  'Supply: verified local micro-caterers, curated network',
+  'Standard packages plus add-ons: veggie, vegan, gluten-free, dessert, drinks',
+  'DACH expansion on roadmap, not a launch promise',
 ]
 
 // 5 · Competition
 const competitionPoints = [
-  'A verified pool instead of profile shopping and star ratings.',
-  'A binding commitment instead of comparing quotes.',
-  'Automatic re-broadcast if the cook who accepted cancels.',
+  'Verified network, not profile shopping and star ratings',
+  'Binding commitment, not comparing quotes',
+  'Auto re-broadcast if the accepting cook cancels',
 ]
 
 const winPoints = [
-  'Every cook is verified up front.',
-  'The fastest matching accept wins, and it is binding.',
-  'Standing controls eligibility internally, not a public ranking.',
+  'Every cook verified up front',
+  'Fastest matching accept wins, and it’s binding',
+  'Standing controls eligibility internally, no public ranking',
 ]
 
 const quadrants = [
@@ -72,7 +77,7 @@ const quadrants = [
   {
     cls: 'tr win',
     title: 'Caterists',
-    note: 'Verified pool, AI intake, one binding accept, auto re-broadcast.',
+    note: 'Verified network, AI intake, one binding accept, auto re-broadcast',
   },
   {
     cls: 'bl',
@@ -82,7 +87,7 @@ const quadrants = [
   {
     cls: 'br',
     title: 'Office-lunch subscriptions',
-    note: 'One fixed provider and menu, not a curated pool of verified cooks.',
+    note: 'One fixed provider and menu, not a curated network of verified cooks',
   },
 ]
 
@@ -91,15 +96,15 @@ const axisY = 'National  →  local and verified'
 
 // 6 · Business Model + GTM + Traction
 const model = [
-  { label: 'Model', body: '12% take-rate on confirmed bookings. Buyers post for free.' },
-  { label: 'Later', body: 'Optional Pro plan for caterers, with no paid priority in matching.' },
-  { label: 'GTM', body: 'Coworking partnerships plus founder-led office outreach in Hamburg.' },
+  { label: 'Model', body: '12% take-rate on confirmed bookings. Buyers post free.' },
+  { label: 'Later', body: 'Optional Pro plan for caterers, no paid matching priority' },
+  { label: 'GTM', body: 'Coworking partnerships plus founder-led office outreach in Hamburg' },
 ]
 
 const traction = [
-  { label: 'Demand', body: 'Goal: 15 to 30 waitlist signups.' },
-  { label: 'Micro-caterers', body: 'Goal: 5 to 10 signups or qualified conversations.' },
-  { label: 'Home-cook pathway', body: 'Goal: 10 to 20 expressions of interest.' },
+  { label: 'Demand', body: 'Goal: 15 to 30 waitlist signups' },
+  { label: 'Micro-caterers', body: 'Goal: 5 to 10 signups or qualified conversations' },
+  { label: 'Home-cook pathway', body: 'Goal: 10 to 20 expressions of interest' },
 ]
 
 const evidence = [
@@ -108,12 +113,12 @@ const evidence = [
 ]
 
 const mission =
-  'Vision: we make home-cook catering legally possible. The MVP places only stage-1 micro-caterers; home cooks join a separate pathway waitlist.'
+  'Vision: make home-cook catering legally possible. MVP places only stage-1 micro-caterers; home cooks join a separate pathway waitlist.'
 
 const pathwayStages = ['Verified Micro-Caterer', 'Home-Pro + partner pro kitchen', 'Resident model (roadmap)']
 
 const trackingNote =
-  'Tracking sheet with three tabs: demand, micro-caterers, home-cook pathway, each with status, source and quote.'
+  'Tracking sheet, three tabs: demand, micro-caterers, home-cook pathway. Status, source, quote each.'
 
 // 7 · Team + Ask
 const team = [
@@ -132,7 +137,7 @@ const team = [
 ]
 
 const teamEdge =
-  'Two founders covering full-stack, AI, product and design. The next step is not capital, but the first solid Hamburg pilot.'
+  'Two founders covering full-stack, AI, product, design. Next step isn’t capital, it’s the first solid Hamburg pilot.'
 
 const askItems = [
   '3 to 5 pilot offices in Hamburg',
@@ -184,6 +189,7 @@ export default function PitchDeck() {
           onClick={() => setActiveSlide((current) => Math.max(current - 1, 0))}
           type="button"
         >
+          <ArrowLeft size={16} />
           Previous
         </button>
         <div className="progress-track" aria-label={`Slide ${activeSlide + 1} of ${slides.length}`}>
@@ -195,6 +201,7 @@ export default function PitchDeck() {
           type="button"
         >
           Next
+          <ArrowRight size={16} />
         </button>
       </footer>
     </main>
@@ -212,6 +219,7 @@ function DeckHeader({
 }>) {
   return (
     <header className="deck-header" aria-label="Pitch deck header">
+      <img className="deck-logo" src={`${import.meta.env.BASE_URL}logo.png`} alt="Caterists" />
       <nav className="slide-dots" aria-label="Slide navigation">
         {labels.map((label, index) => (
           <button
@@ -229,13 +237,18 @@ function DeckHeader({
   )
 }
 
-function Slide({ children, eyebrow, tag = 'CATERISTS', tone = 'white' }: SlideProps) {
+function Slide({ children, eyebrow, tag = 'Caterists', tone = 'cream', accent = 'purple' }: SlideProps) {
   return (
-    <section className={`slide slide-${tone}`}>
-      <div className="slide-grid" aria-hidden="true" />
-      <div className="slide-meta top-left">{eyebrow}</div>
-      <div className="slide-meta top-right">{tag}</div>
-      <div className="slide-meta bottom-left">HAMBURG</div>
+    <section className={`slide slide-${tone} slide-accent-${accent}`}>
+      <div className="slide-deco" aria-hidden="true">
+        <span className="blob blob-1" />
+        <span className="blob blob-2" />
+        <Sparkles className="slide-spark spark-a" />
+        <Sparkles className="slide-spark spark-b" />
+      </div>
+      <span className="sticker sticker-eyebrow">{eyebrow}</span>
+      <span className="sticker sticker-brand">{tag}</span>
+      <span className="sticker sticker-place">Hamburg</span>
       <div className="slide-content">{children}</div>
     </section>
   )
@@ -243,7 +256,7 @@ function Slide({ children, eyebrow, tag = 'CATERISTS', tone = 'white' }: SlidePr
 
 function ProblemSlide() {
   return (
-    <Slide eyebrow="Hook + Problem">
+    <Slide eyebrow="Hook + Problem" accent="coral">
       <div className="problem-layout">
         <div className="problem-head">
           <p className="kicker">Offices and cooks don’t find each other.</p>
@@ -269,19 +282,19 @@ function ProblemSlide() {
 
 function SolutionSlide() {
   return (
-    <Slide eyebrow="Solution" tone="blue">
+    <Slide eyebrow="Solution" tone="purple" accent="lime">
       <div className="solution-flow">
         <div className="solution-copy">
           <h2>
             One request.
             <br />
-            Verified pool.
+            Verified network.
             <br />
             First binding accept wins.
           </h2>
           <p className="body-copy">
-            Caterists is not a profile marketplace. The buyer posts one checked request, every matching
-            cook sees it at the same time, and the first binding yes closes the order.
+            Not a profile marketplace. Buyer posts one checked request, every matching cook sees it at
+            once, first binding yes closes the order.
           </p>
           <ol className="flow-steps">
             {solutionSteps.map((step, index) => (
@@ -297,7 +310,7 @@ function SolutionSlide() {
             <div className="phone-bar" />
             <p className="mini-label">Request</p>
             <strong>Lunch for 35, next Thursday</strong>
-            <span>Budget · allergens · cuisine · delivery window · invoice.</span>
+            <span>Budget · allergens · cuisine · delivery window · invoice</span>
           </div>
           <div className="demo-phone matches">
             <div className="phone-bar" />
@@ -309,7 +322,7 @@ function SolutionSlide() {
           <div className="demo-phone status">
             <div className="phone-bar" />
             <p className="mini-label">Accept + fallback</p>
-            <StatusLine label="Pool notified" state="hot" />
+            <StatusLine label="Network notified" state="hot" />
             <StatusLine label="Brigitte accepts" state="ok" />
             <StatusLine label="Brigitte cancels" state="bad" />
             <StatusLine label="Re-broadcast → Mehmet" state="ok" />
@@ -322,7 +335,7 @@ function SolutionSlide() {
 
 function LiveDemoSlide() {
   return (
-    <Slide eyebrow="Live Demo">
+    <Slide eyebrow="Live Demo" accent="sky">
       <div className="live-demo-layout">
         <div className="live-demo-copy">
           <h2>The golden path in 90 seconds</h2>
@@ -340,7 +353,7 @@ function LiveDemoSlide() {
             <div className="phone-bar" />
             <p className="mini-label">Intake</p>
             <strong>“Monday, 35 people, veggie, 12:00 to 12:30, invoice.”</strong>
-            <span>AI intake structures date, headcount, diet, allergens, budget, location and delivery window.</span>
+            <span>AI intake structures date, headcount, diet, allergens, budget, location, delivery window</span>
           </div>
           <div className="demo-phone matches">
             <div className="phone-bar" />
@@ -365,7 +378,7 @@ function LiveDemoSlide() {
 
 function MarketSlide() {
   return (
-    <Slide eyebrow="Market">
+    <Slide eyebrow="Market" accent="purple">
       <div className="market-layout">
         <div className="market-copy">
           <h2>Hamburg first, DACH later</h2>
@@ -376,16 +389,19 @@ function MarketSlide() {
           </div>
           <ul className="win-list">
             {marketPoints.map((point) => (
-              <li key={point}>{point}</li>
+              <li key={point}>
+                <Check size={22} strokeWidth={3} />
+                <span>{point}</span>
+              </li>
             ))}
           </ul>
         </div>
         <div className="channel-primary market-card">
           <span className="tag">MVP wedge</span>
-          <strong>We bring verified cooks and B2B demand together</strong>
+          <strong>Verified cooks meet B2B demand</strong>
           <p>
-            Focused on office managers, coworking spaces and event teams who juggle several caterers
-            today and need one binding commitment.
+            For office managers, coworking spaces and event teams juggling several caterers, who need
+            one binding commitment.
           </p>
         </div>
       </div>
@@ -395,13 +411,16 @@ function MarketSlide() {
 
 function CompetitionSlide() {
   return (
-    <Slide eyebrow="Competition">
+    <Slide eyebrow="Competition" accent="pink">
       <div className="market-layout">
         <div className="market-copy">
           <h2>No profile shopping, no bidding</h2>
           <ul className="win-list">
             {competitionPoints.map((point) => (
-              <li key={point}>{point}</li>
+              <li key={point}>
+                <Check size={22} strokeWidth={3} />
+                <span>{point}</span>
+              </li>
             ))}
           </ul>
           <div className="segment-chips">
@@ -427,7 +446,7 @@ function CompetitionSlide() {
 
 function BusinessSlide() {
   return (
-    <Slide eyebrow="Business + GTM + Traction" tone="blue">
+    <Slide eyebrow="Business + GTM + Traction" tone="purple" accent="lime">
       <div className="business-layout business-compact">
         <h2>12% take-rate, Hamburg pilots, three waitlist tracks</h2>
         <div className="model-row">
@@ -471,7 +490,7 @@ function BusinessSlide() {
 
 function TeamSlide() {
   return (
-    <Slide eyebrow="Team + Ask">
+    <Slide eyebrow="Team + Ask" accent="yellow">
       <div className="team-layout">
         <div className="team-head">
           <h2>Team and the ask</h2>
@@ -500,7 +519,6 @@ function TeamSlide() {
               </article>
             ))}
           </div>
-          <p className="contact">Hamburg, Germany</p>
         </div>
       </div>
     </Slide>
@@ -520,9 +538,12 @@ function CookCard({ name, status }: Readonly<{ name: string; status: string }>) 
 }
 
 function StatusLine({ label, state }: Readonly<{ label: string; state: 'ok' | 'bad' | 'hot' }>) {
+  const Icon = state === 'ok' ? Check : state === 'bad' ? X : Clock
   return (
     <div className={`status-line ${state}`}>
-      <span />
+      <span className="sl-badge">
+        <Icon size={13} strokeWidth={3} />
+      </span>
       <p>{label}</p>
     </div>
   )

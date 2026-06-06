@@ -25,7 +25,7 @@ function KitchenScreen({ goTo }) {
       <PageHead title="Kitchen" sub="What you can cook. Caterists uses this to send you only the orders that fit." />
 
       {/* private note */}
-      <div className="rounded-xl border border-brand/20 bg-brand/5 p-4 flex items-start gap-3 mb-6">
+      <div className="rounded-xl border border-brand/30 bg-[var(--brand-muted)] p-4 flex items-start gap-3 mb-6">
         <SoftIcon name="lock" tone="brand" />
         <div className="text-sm text-foreground/80">
           <span className="font-medium text-brand">Private, not a menu.</span> Buyers don't browse cooks or dishes. They post a request for the meals they want; Caterists broadcasts it to every eligible cook, and the first to accept gets it. This profile only decides which requests reach you.
