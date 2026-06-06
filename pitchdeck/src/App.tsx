@@ -8,7 +8,6 @@ type Accent = 'coral' | 'sky' | 'purple' | 'pink' | 'lime' | 'yellow'
 type SlideProps = {
   children: ReactNode
   eyebrow: string
-  tag?: string
   tone?: Tone
   accent?: Accent
 }
@@ -24,14 +23,10 @@ const todaySteps = [
   'Local micro-caterers underserved',
 ]
 
-const supplyNote =
-  'Talent and capacity, but no steady demand matching their specialty'
-
 // 2 · Solution
 const solutionSteps = [
-  'Form or free text: date, headcount, diet, allergens, budget, location, delivery window',
-  'AI intake builds a checkable, fixed-price brief',
-  'Hard filters fire it to every matching, verified cook at once',
+  'Form or free-text request',
+  'Filter-based matching',
   'First binding accept closes the order',
   'Cook cancels, order auto re-broadcasts to the network',
 ]
@@ -46,8 +41,6 @@ const demoSteps = [
 ]
 
 // 4 · Market
-const segments = ['Office lunches', 'Workshops and meetings', 'Coworking events', 'One-off events for 15 to 50 people']
-
 const marketPoints = [
   'MVP: Hamburg, office / coworking / event teams',
   'Supply: verified local micro-caterers, curated network',
@@ -62,12 +55,6 @@ const competitionPoints = [
   'Auto re-broadcast if the accepting cook cancels',
 ]
 
-const winPoints = [
-  'Every cook verified up front',
-  'Fastest matching accept wins, and it’s binding',
-  'Standing controls eligibility internally, no public ranking',
-]
-
 const quadrants = [
   {
     cls: 'tl',
@@ -77,7 +64,7 @@ const quadrants = [
   {
     cls: 'tr win',
     title: 'Caterists',
-    note: 'Verified network, AI intake, one binding accept, auto re-broadcast',
+    note: 'Verified network, one binding accept, auto re-broadcast',
   },
   {
     cls: 'bl',
@@ -96,29 +83,19 @@ const axisY = 'National  →  local and verified'
 
 // 6 · Business Model + GTM + Traction
 const model = [
-  { label: 'Model', body: '12% take-rate on confirmed bookings. Buyers post free.' },
-  { label: 'Later', body: 'Optional Pro plan for caterers, no paid matching priority' },
-  { label: 'GTM', body: 'Coworking partnerships plus founder-led office outreach in Hamburg' },
+  { label: 'Model', body: '12% take-rate, buyers post free' },
+  { label: 'Later', body: 'Optional Pro plan, no paid priority' },
+  { label: 'GTM', body: 'Coworking partnerships, founder-led outreach' },
 ]
 
 const traction = [
-  { label: 'Demand', body: 'Goal: 15 to 30 waitlist signups' },
-  { label: 'Micro-caterers', body: 'Goal: 5 to 10 signups or qualified conversations' },
-  { label: 'Home-cook pathway', body: 'Goal: 10 to 20 expressions of interest' },
-]
-
-const evidence = [
-  '“Today we call four to six caterers per event. One binding yes would be enough.” (office manager)',
-  '“Unpredictable, mismatched demand is my biggest problem.” (micro-caterer)',
+  { label: 'Demand', body: 'Goal: 15–30 waitlist signups' },
+  { label: 'Micro-caterers', body: 'Goal: 5–10 signups or conversations' },
+  { label: 'Home-cook pathway', body: 'Goal: 10–20 expressions of interest' },
 ]
 
 const mission =
   'Vision: make home-cook catering legally possible. MVP places only stage-1 micro-caterers; home cooks join a separate pathway waitlist.'
-
-const pathwayStages = ['Verified Micro-Caterer', 'Home-Pro + partner pro kitchen', 'Resident model (roadmap)']
-
-const trackingNote =
-  'Tracking sheet, three tabs: demand, micro-caterers, home-cook pathway. Status, source, quote each.'
 
 // 7 · Team + Ask
 const team = [
@@ -237,7 +214,7 @@ function DeckHeader({
   )
 }
 
-function Slide({ children, eyebrow, tag = 'Caterists', tone = 'cream', accent = 'purple' }: SlideProps) {
+function Slide({ children, eyebrow, tone = 'cream', accent = 'purple' }: SlideProps) {
   return (
     <section className={`slide slide-${tone} slide-accent-${accent}`}>
       <div className="slide-deco" aria-hidden="true">
@@ -247,8 +224,6 @@ function Slide({ children, eyebrow, tag = 'Caterists', tone = 'cream', accent = 
         <Sparkles className="slide-spark spark-b" />
       </div>
       <span className="sticker sticker-eyebrow">{eyebrow}</span>
-      <span className="sticker sticker-brand">{tag}</span>
-      <span className="sticker sticker-place">Hamburg</span>
       <div className="slide-content">{children}</div>
     </section>
   )
@@ -259,8 +234,8 @@ function ProblemSlide() {
     <Slide eyebrow="Hook + Problem" accent="coral">
       <div className="problem-layout">
         <div className="problem-head">
-          <p className="kicker">Offices and cooks don’t find each other.</p>
-          <h2>Five calls, no binding yes.</h2>
+          <p className="kicker">Events and micro-caterers don’t find each other.</p>
+          <h2>Five calls, no commitment.</h2>
           <p className="persona">{persona}</p>
         </div>
         <div className="problem-today">
@@ -273,7 +248,6 @@ function ProblemSlide() {
               </li>
             ))}
           </ol>
-          <p className="problem-supply">{supplyNote}</p>
         </div>
       </div>
     </Slide>
@@ -292,10 +266,6 @@ function SolutionSlide() {
             <br />
             First binding accept wins.
           </h2>
-          <p className="body-copy">
-            Not a profile marketplace. Buyer posts one checked request, every matching cook sees it at
-            once, first binding yes closes the order.
-          </p>
           <ol className="flow-steps">
             {solutionSteps.map((step, index) => (
               <li key={step}>
@@ -338,7 +308,7 @@ function LiveDemoSlide() {
     <Slide eyebrow="Live Demo" accent="sky">
       <div className="live-demo-layout">
         <div className="live-demo-copy">
-          <h2>The golden path in 90 seconds</h2>
+          <h2>The golden path</h2>
           <ol className="today-list">
             {demoSteps.map((step, index) => (
               <li key={step}>
@@ -353,7 +323,7 @@ function LiveDemoSlide() {
             <div className="phone-bar" />
             <p className="mini-label">Intake</p>
             <strong>“Monday, 35 people, veggie, 12:00 to 12:30, invoice.”</strong>
-            <span>AI intake structures date, headcount, diet, allergens, budget, location, delivery window</span>
+            <span>Structured into date, headcount, diet, allergens, budget, location, delivery window</span>
           </div>
           <div className="demo-phone matches">
             <div className="phone-bar" />
@@ -381,12 +351,7 @@ function MarketSlide() {
     <Slide eyebrow="Market" accent="purple">
       <div className="market-layout">
         <div className="market-copy">
-          <h2>Hamburg first, DACH later</h2>
-          <div className="segment-chips">
-            {segments.map((segment) => (
-              <span key={segment}>{segment}</span>
-            ))}
-          </div>
+          <h2>Hamburg pilot</h2>
           <ul className="win-list">
             {marketPoints.map((point) => (
               <li key={point}>
@@ -423,11 +388,6 @@ function CompetitionSlide() {
               </li>
             ))}
           </ul>
-          <div className="segment-chips">
-            {winPoints.map((point) => (
-              <span key={point}>{point}</span>
-            ))}
-          </div>
         </div>
         <div className="matrix" aria-label="Competitive positioning matrix">
           {quadrants.map((quadrant) => (
@@ -448,40 +408,17 @@ function BusinessSlide() {
   return (
     <Slide eyebrow="Business + GTM + Traction" tone="purple" accent="lime">
       <div className="business-layout business-compact">
-        <h2>12% take-rate, Hamburg pilots, three waitlist tracks</h2>
+        <h2>Hamburg pilots, three waitlist tracks</h2>
         <div className="model-row">
-          {model.map((item) => (
+          {[...model, ...traction].map((item) => (
             <article key={item.label}>
               <span>{item.label}</span>
               <p>{item.body}</p>
             </article>
           ))}
-        </div>
-        <div className="traction-row">
-          {traction.map((item) => (
-            <article key={item.label}>
-              <span>{item.label}</span>
-              <p>{item.body}</p>
-            </article>
-          ))}
-        </div>
-        <div className="evidence-row">
-          <p className="evidence-label">{trackingNote}</p>
-          <div className="evidence-cards">
-            {evidence.map((quote) => (
-              <blockquote key={quote}>{quote}</blockquote>
-            ))}
-          </div>
         </div>
         <div className="mission-strip">
           <p>{mission}</p>
-          <div className="stage-chips">
-            {pathwayStages.map((stage, index) => (
-              <span key={stage}>
-                {index + 1}. {stage}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </Slide>
