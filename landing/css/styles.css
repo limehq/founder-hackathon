@@ -309,3 +309,9 @@ body.modal-open{overflow:hidden}
 .faq-a{font-size:14px;color:var(--muted);line-height:1.5}
 
 .chip-140{width:140px}
+
+/* ---- TOP BAR (slim dark login strip) ---- */
+.topbar{background:#1B1C1F;height:38px;display:flex;align-items:center;justify-content:flex-end;gap:22px;padding:0 var(--pad-x)}
+.topbar-login{display:inline-flex;align-items:center;gap:7px;color:#E7E2D6;font-family:var(--body);font-size:13px;font-weight:600;transition:color .12s}
+.topbar-login svg{width:15px;height:15px;color:currentColor}
+.topbar-login:hover{color:#fff}
