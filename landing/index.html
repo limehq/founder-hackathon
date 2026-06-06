@@ -88,13 +88,13 @@
         <div class="step-t">Describe your needs</div>
         <div class="step-d">Occasion, guests, date, diet — in your own words or via the form.</div>
       </div>
-      <i class="step-arrow" data-lucide="move-right"></i>
+      <svg class="step-arrow" viewBox="0 0 60 34" fill="none" stroke="#141414" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17C18 5 40 5 54 17"/><path d="M42 15 54 17 50 6"/></svg>
       <div class="step-card" style="transform:rotate(1.5deg)">
         <div class="step-num" style="background:var(--pink)">2</div>
         <div class="step-t">Goes live to the network</div>
         <div class="step-d">Your request instantly reaches every matching, verified Kitchen Partner.</div>
       </div>
-      <i class="step-arrow" data-lucide="move-right"></i>
+      <svg class="step-arrow" viewBox="0 0 60 34" fill="none" stroke="#141414" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17C18 5 40 5 54 17"/><path d="M42 15 54 17 50 6"/></svg>
       <div class="step-card" style="transform:rotate(-1deg)">
         <div class="step-num" style="background:var(--lime)">3</div>
         <div class="step-t">First to accept, bindingly</div>
@@ -250,10 +250,25 @@
     <div class="foot-divider"></div>
     <div class="foot-bottom">
       <span class="foot-copy">© 2026 Caterists · Imprint · Privacy</span>
-      <a href="#" class="foot-cc">Love to cook? →</a>
+      <a href="apply/" class="foot-cc">Love to cook? →</a>
     </div>
   </footer>
 
+</div>
+
+<!-- ============ WAITLIST MODAL ============ -->
+<div class="modal-overlay" id="waitlist-modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-h">
+    <button class="modal-close js-modal-close" aria-label="Close"><i data-lucide="x"></i></button>
+    <i class="modal-spark" data-lucide="sparkles" style="color:var(--pink)"></i>
+    <div class="eyebrow" style="color:var(--purple)">JOIN THE WAITLIST</div>
+    <h3 class="modal-h" id="modal-h">You're early!</h3>
+    <p class="modal-sub">We launch in Hamburg soon — leave your email and we'll reach out first.</p>
+    <form class="modal-form js-waitlist">
+      <div class="email-field"><input type="email" placeholder="Your work email" /></div>
+      <button type="submit" class="btn-ink">Join waitlist <i data-lucide="arrow-right"></i></button>
+    </form>
+  </div>
 </div>
 
 <script src="https://unpkg.com/lucide@latest"></script>
