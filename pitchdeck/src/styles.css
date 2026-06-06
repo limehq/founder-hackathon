@@ -57,22 +57,14 @@ button:disabled {
 
 .deck-header {
   z-index: 10;
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  gap: 26px;
+  display: flex;
+  justify-content: center;
   align-items: center;
   width: min(100%, 1280px);
   min-height: 42px;
   padding: 6px 0;
   background: var(--black);
-  color: var(--white);
-  font-size: 26px;
-  font-weight: 800;
   line-height: 1;
-}
-
-.deck-header span {
-  color: rgba(247, 249, 255, 0.48);
 }
 
 .slide-dots {
@@ -330,6 +322,23 @@ h2 {
   line-height: 1.05;
 }
 
+.today-list li.highlight {
+  margin: 0 -14px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: var(--lime);
+}
+
+.today-list li.highlight > span {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: var(--lime);
+}
+
+.today-list li.highlight p {
+  color: var(--blue);
+}
+
 .problem-supply {
   max-width: 480px;
   margin-top: 26px;
@@ -506,7 +515,46 @@ h2 {
   background: var(--lime);
 }
 
-/* ---------- 3 · Why Now ---------- */
+/* ---------- 3 · Live Demo ---------- */
+.live-demo-layout {
+  display: grid;
+  grid-template-columns: 0.88fr 1.12fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.live-demo-copy h2 {
+  font-size: 46px;
+  line-height: 0.96;
+}
+
+.live-demo-copy .today-list {
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.live-demo-copy .today-list li {
+  grid-template-columns: 30px 1fr;
+  gap: 12px;
+}
+
+.live-demo-copy .today-list li > span {
+  width: 28px;
+  height: 28px;
+}
+
+.live-demo-copy .today-list p {
+  font-size: 15px;
+}
+
+.live-demo-stage .demo-phone {
+  min-height: 286px;
+}
+
+.live-demo-stage .demo-phone.matches {
+  min-height: 326px;
+}
+
 .why-layout {
   align-content: start;
 }
@@ -554,7 +602,7 @@ h2 {
   line-height: 1.15;
 }
 
-/* ---------- 4 · Market + Competition ---------- */
+/* ---------- 4 · Market / 5 · Competition ---------- */
 .market-layout {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -564,6 +612,11 @@ h2 {
 
 .market-copy h2 {
   font-size: 56px;
+}
+
+.market-card {
+  min-height: 260px;
+  border-radius: 10px;
 }
 
 .segment-chips {
@@ -683,18 +736,28 @@ h2 {
   gap: 20px;
 }
 
+.business-compact {
+  gap: 14px;
+}
+
 .business-layout h2 {
   font-size: 46px;
   line-height: 0.96;
 }
 
-.model-row {
+.business-compact h2 {
+  font-size: 40px;
+}
+
+.model-row,
+.traction-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
-.model-row article {
+.model-row article,
+.traction-row article {
   display: grid;
   align-content: start;
   gap: 8px;
@@ -703,7 +766,8 @@ h2 {
   border-radius: 10px;
 }
 
-.model-row span {
+.model-row span,
+.traction-row span {
   color: var(--lime);
   font-size: 13px;
   font-weight: 800;
@@ -711,11 +775,27 @@ h2 {
   text-transform: uppercase;
 }
 
-.model-row p {
+.model-row p,
+.traction-row p {
   color: var(--white);
   font-size: 16px;
   font-weight: 800;
   line-height: 1.12;
+}
+
+.business-compact .model-row,
+.business-compact .traction-row {
+  gap: 12px;
+}
+
+.business-compact .model-row article,
+.business-compact .traction-row article {
+  padding: 12px;
+}
+
+.business-compact .model-row p,
+.business-compact .traction-row p {
+  font-size: 14px;
 }
 
 .evidence-label {
@@ -756,6 +836,15 @@ h2 {
   font-size: 16px;
   font-weight: 800;
   line-height: 1.12;
+}
+
+.business-compact .mission-strip {
+  gap: 8px;
+  padding-top: 12px;
+}
+
+.business-compact .mission-strip p {
+  font-size: 14px;
 }
 
 .stage-chips {
@@ -863,10 +952,37 @@ h2 {
 
 .team-cards article {
   display: grid;
-  gap: 4px;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: center;
   padding: 14px 20px;
   border: 2px solid rgba(7, 91, 245, 0.28);
   border-radius: 10px;
+}
+
+.team-avatar {
+  display: block;
+  width: 88px;
+  height: 88px;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.team-meta {
+  display: grid;
+  gap: 4px;
+}
+
+.team-email {
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.team-email:hover {
+  text-decoration: underline;
 }
 
 .team-cards strong {
@@ -970,6 +1086,7 @@ h2 {
 
   .problem-head h2,
   .solution-copy h2,
+  .live-demo-copy h2,
   .why-layout h2,
   .market-copy h2,
   .business-layout h2,
@@ -984,6 +1101,7 @@ h2 {
 
   .problem-layout,
   .solution-flow,
+  .live-demo-layout,
   .market-layout,
   .gtm-grid {
     grid-template-columns: 1fr;
@@ -993,6 +1111,7 @@ h2 {
   .demo-stage,
   .catalyst-grid,
   .model-row,
+  .traction-row,
   .evidence-cards,
   .ask-grid {
     grid-template-columns: 1fr;

@@ -13,64 +13,66 @@ type SlideProps = {
   tone?: 'blue' | 'white'
 }
 
-// 1 · Problem + Customer
-const persona =
-  'Office managers and team assistants at companies of 20 to 200 people, plus agencies and coworking spaces in Hamburg.'
+// 1 · Hook + Problem
+const persona = 'Office managers, team assistants, event organizers and coworking teams in Hamburg.'
 
 const todaySteps = [
   'Call five caterers, one by one',
-  'Chase quotes on price, allergens and delivery',
-  'Still get no firm yes',
-  'One drops out, and the search starts over',
+  'Chase prices, allergens and delivery windows by phone',
+  'Still get no binding commitment',
+  'If one drops out, it all starts over',
+  'Local micro-caterers are underserved',
 ]
 
 const supplyNote =
-  'Good local cooks have the talent but no steady, compliant stream of orders that fits their capacity.'
+  'They have the talent and capacity, but no steady stream of demand that matches their specialty.'
 
-// 2 · Solution + Product
+// 2 · Solution
 const solutionSteps = [
-  'AI intake turns a free-text request into one fixed-price brief.',
-  'Hard filters send it to every eligible, verified cook at once.',
-  'The first cook to accept is committed to deliver.',
-  'If they cancel, it goes back to the pool automatically.',
+  'A form or free text captures date, headcount, diet, allergens, budget, location and delivery window.',
+  'AI intake turns it into a checkable, fixed-price brief.',
+  'Hard filters send it to every matching, verified cook at once.',
+  'First binding accept: the first cook to commit closes the order.',
+  'If a cook cancels, the order goes back to the pool automatically.',
 ]
 
-// 3 · Why Now
-const catalysts = [
-  {
-    tag: 'Cost collapse',
-    title: 'AI intake got cheap',
-    body: 'Parsing a messy request into a structured, fixed-price brief used to be hard. Now it costs cents per request and works well enough to show a buyer.',
-  },
-  {
-    tag: 'Behaviour shift',
-    title: 'Office food is recurring now',
-    body: 'Hybrid schedules and return-to-office turned catered team days into a regular budget line, not a one-off treat.',
-  },
-  {
-    tag: 'Supply boom',
-    title: 'Micro-caterers are everywhere',
-    body: 'There are now plenty of small, licensed food businesses and rentable commercial kitchens to build a pool from.',
-  },
+// 3 · Live Demo
+const demoSteps = [
+  'An office manager needs lunch for 35 people.',
+  'The request goes live to matching, verified cooks in Hamburg.',
+  'Brigitte commits first, and the order closes for everyone else.',
+  'In chat, both sides sort out setup, delivery and special requests.',
+  'Confirmation and invoice are ready. If she cancels, it re-broadcasts to Mehmet.',
 ]
 
-const moat =
-  'The AI is just the intake. The hard part to copy is the verified pool of cooks and the dispatch: one binding accept, and an automatic re-broadcast when someone cancels.'
+// 4 · Market
+const segments = ['Office lunches', 'Workshops and meetings', 'Coworking events', 'One-off events for 15 to 50 people']
 
-// 4 · Market + Competition
-const segments = ['Office lunches, workshops, offsites', 'Coworking member events', 'Events for 15 to 50 people']
+const marketPoints = [
+  'MVP: Hamburg, office / coworking / event teams.',
+  'Supply: verified local micro-caterers in a curated pool.',
+  'Standard packages plus add-ons: veggie, vegan, gluten-free, dessert, drinks.',
+  'DACH expansion stays on the roadmap, not a launch promise.',
+]
+
+// 5 · Competition
+const competitionPoints = [
+  'A verified pool instead of profile shopping and star ratings.',
+  'A binding commitment instead of comparing quotes.',
+  'Automatic re-broadcast if the cook who accepted cancels.',
+]
 
 const winPoints = [
-  'Every cook is verified before an order goes out. No profile shopping.',
-  'A firm yes in minutes, not a pile of quotes.',
-  'If a cook cancels, the order re-broadcasts on its own.',
+  'Every cook is verified up front.',
+  'The fastest matching accept wins, and it is binding.',
+  'Standing controls eligibility internally, not a public ranking.',
 ]
 
 const quadrants = [
   {
     cls: 'tl',
     title: 'Status quo',
-    note: 'Phone-around, classic caterers, freelance-chef sites. Local but quote-based, no firm yes.',
+    note: 'Phone calls, classic caterers, freelance sites. Local, but quote-based.',
   },
   {
     cls: 'tr win',
@@ -84,67 +86,64 @@ const quadrants = [
   },
   {
     cls: 'br',
-    title: 'Office-lunch subs',
-    note: 'Like Smunch. Recurring daily lunch, not one-off events.',
+    title: 'Office-lunch subscriptions',
+    note: 'One fixed provider and menu, not a curated pool of verified cooks.',
   },
 ]
 
-const axisX = 'You coordinate  →  one binding match'
+const axisX = 'You coordinate / collect quotes  →  one binding match'
 const axisY = 'National  →  local and verified'
 
-// 5 · Business Model + Traction
+// 6 · Business Model + GTM + Traction
 const model = [
-  { label: 'Who pays', body: 'Cooks pay us. Buyers post for free.' },
-  { label: 'How much', body: '12% of each confirmed order. A Pro tier for cooks comes later.' },
-  { label: 'How often', body: 'Every booking, and teams book on a regular cadence.' },
+  { label: 'Model', body: '12% take-rate on confirmed bookings. Buyers post for free.' },
+  { label: 'Later', body: 'Optional Pro plan for caterers, with no paid priority in matching.' },
+  { label: 'GTM', body: 'Coworking partnerships plus founder-led office outreach in Hamburg.' },
+]
+
+const traction = [
+  { label: 'Demand', body: 'Goal: 15 to 30 waitlist signups.' },
+  { label: 'Micro-caterers', body: 'Goal: 5 to 10 signups or qualified conversations.' },
+  { label: 'Home-cook pathway', body: 'Goal: 10 to 20 expressions of interest.' },
 ]
 
 const evidence = [
-  '“We already call four to six caterers per event. I would switch for one firm yes.” (office manager)',
+  '“Today we call four to six caterers per event. One binding yes would be enough.” (office manager)',
   '“Unpredictable, mismatched demand is my biggest problem.” (micro-caterer)',
 ]
 
 const mission =
-  'Where this goes: a legal, planned way for home cooks to earn on the side. Parents on leave, retirees, people who can really cook.'
+  'Vision: we make home-cook catering legally possible. The MVP places only stage-1 micro-caterers; home cooks join a separate pathway waitlist.'
 
-const pathwayStages = ['Verified Micro-Caterer', 'Home-Pro + partner kitchen', 'Resident model']
+const pathwayStages = ['Verified Micro-Caterer', 'Home-Pro + partner pro kitchen', 'Resident model (roadmap)']
 
-// 6 · Go-to-Market
-const gtmPrimary = {
-  tag: 'Primary channel',
-  title: 'Coworking-space partnerships in Hamburg',
-  body: 'Each coworking and flex-office operator hosts dozens of member companies and wants catering they don’t have to run themselves. One partnership brings a cluster of demand, and two founders can walk into ten of them.',
-}
+const trackingNote =
+  'Tracking sheet with three tabs: demand, micro-caterers, home-cook pathway, each with status, source and quote.'
 
-const gtmSide = [
-  {
-    tag: 'Backed by outbound',
-    title: 'Founder-led office outreach',
-    body: '200 contacted → 25 calls → about 20 pilot teams, via LinkedIn and local ops groups.',
-    funnel: true,
-  },
-  {
-    tag: 'In parallel',
-    title: 'Seed the pool first',
-    body: '10 verified micro-caterers from Maps, local listings and direct DMs. The pool has to exist before demand shows up.',
-    funnel: false,
-  },
-]
-
-// 7 · Team + Ask + Contact
+// 7 · Team + Ask
 const team = [
-  { name: 'Jurij Koch', role: 'Full-stack and AI' },
-  { name: 'Sebil Satici', role: 'Product and Design' },
+  {
+    name: 'Jurij Koch',
+    role: 'Full-stack and AI',
+    email: 'jurij@limehq.dev',
+    image: 'https://avatars.githubusercontent.com/u/1895950?v=4',
+  },
+  {
+    name: 'Sebil Satici',
+    role: 'Product and Design',
+    email: 'sebil@limehq.dev',
+    image: 'https://avatars.githubusercontent.com/u/22053023?v=4',
+  },
 ]
 
 const teamEdge =
-  'Two of us, covering full-stack, AI and design. We built and shipped this product and this deck during the hackathon, and we will move at that pace to get the first Hamburg cooks and offices live.'
+  'Two founders covering full-stack, AI, product and design. The next step is not capital, but the first solid Hamburg pilot.'
 
 const askItems = [
-  '3 to 5 Hamburg pilot offices',
-  '10 verified pilot cooks',
+  '3 to 5 pilot offices in Hamburg',
+  '10 pilot micro-caterers',
   '1 to 2 cloud-kitchen partners',
-  'A DACH food-law mentor',
+  'A mentor for DACH food law',
 ]
 
 function PitchDeck() {
@@ -152,10 +151,10 @@ function PitchDeck() {
     () => [
       { label: 'Problem', element: <ProblemSlide /> },
       { label: 'Solution', element: <SolutionSlide /> },
-      { label: 'Why now', element: <WhyNowSlide /> },
+      { label: 'Demo', element: <LiveDemoSlide /> },
       { label: 'Market', element: <MarketSlide /> },
+      { label: 'Competition', element: <CompetitionSlide /> },
       { label: 'Business', element: <BusinessSlide /> },
-      { label: 'GTM', element: <GtmSlide /> },
       { label: 'Team', element: <TeamSlide /> },
     ],
     [],
@@ -218,7 +217,6 @@ function DeckHeader({
 }>) {
   return (
     <header className="deck-header" aria-label="Pitch deck header">
-      <strong>Caterists</strong>
       <nav className="slide-dots" aria-label="Slide navigation">
         {labels.map((label, index) => (
           <button
@@ -232,7 +230,6 @@ function DeckHeader({
           </button>
         ))}
       </nav>
-      <span>Hamburg first</span>
     </header>
   )
 }
@@ -251,18 +248,18 @@ function Slide({ children, eyebrow, tag = 'CATERISTS', tone = 'white' }: SlidePr
 
 function ProblemSlide() {
   return (
-    <Slide eyebrow="Problem + Customer">
+    <Slide eyebrow="Hook + Problem">
       <div className="problem-layout">
         <div className="problem-head">
-          <p className="kicker">It’s Thursday, 4 PM.</p>
-          <h2>Monday’s offsite still has no food.</h2>
+          <p className="kicker">Offices and cooks don’t find each other.</p>
+          <h2>Five calls, no binding yes.</h2>
           <p className="persona">{persona}</p>
         </div>
         <div className="problem-today">
-          <p className="mini-label">What they do today</p>
+          <p className="mini-label">What happens today</p>
           <ol className="today-list">
             {todaySteps.map((step, index) => (
-              <li key={step}>
+              <li className={index === todaySteps.length - 1 ? 'highlight' : undefined} key={step}>
                 <span>{index + 1}</span>
                 <p>{step}</p>
               </li>
@@ -277,7 +274,7 @@ function ProblemSlide() {
 
 function SolutionSlide() {
   return (
-    <Slide eyebrow="Solution + Product" tone="blue">
+    <Slide eyebrow="Solution" tone="blue">
       <div className="solution-flow">
         <div className="solution-copy">
           <h2>
@@ -288,8 +285,8 @@ function SolutionSlide() {
             First binding accept wins.
           </h2>
           <p className="body-copy">
-            Caterists isn’t a profile marketplace. You post one checked request; every eligible, verified
-            cook sees it at once, and the first binding yes closes the order.
+            Caterists is not a profile marketplace. The buyer posts one checked request, every matching
+            cook sees it at the same time, and the first binding yes closes the order.
           </p>
           <ol className="flow-steps">
             {solutionSteps.map((step, index) => (
@@ -310,13 +307,13 @@ function SolutionSlide() {
           <div className="demo-phone matches">
             <div className="phone-bar" />
             <p className="mini-label">Broadcast</p>
-            <CookCard name="Brigitte" status="Eligible" />
-            <CookCard name="Mehmet" status="Eligible" />
-            <CookCard name="Mina" status="Eligible" />
+            <CookCard name="Brigitte" status="matches the order" />
+            <CookCard name="Mehmet" status="matches the order" />
+            <CookCard name="Mina" status="matches the order" />
           </div>
           <div className="demo-phone status">
             <div className="phone-bar" />
-            <p className="mini-label">Accept + re-broadcast</p>
+            <p className="mini-label">Accept + fallback</p>
             <StatusLine label="Pool notified" state="hot" />
             <StatusLine label="Brigitte accepts" state="ok" />
             <StatusLine label="Brigitte cancels" state="bad" />
@@ -328,21 +325,44 @@ function SolutionSlide() {
   )
 }
 
-function WhyNowSlide() {
+function LiveDemoSlide() {
   return (
-    <Slide eyebrow="Why Now">
-      <div className="why-layout">
-        <h2>Why this works now</h2>
-        <div className="catalyst-grid">
-          {catalysts.map((catalyst) => (
-            <article key={catalyst.title}>
-              <span className="tag">{catalyst.tag}</span>
-              <strong>{catalyst.title}</strong>
-              <p>{catalyst.body}</p>
-            </article>
-          ))}
+    <Slide eyebrow="Live Demo">
+      <div className="live-demo-layout">
+        <div className="live-demo-copy">
+          <h2>The golden path in 90 seconds</h2>
+          <ol className="today-list">
+            {demoSteps.map((step, index) => (
+              <li key={step}>
+                <span>{index + 1}</span>
+                <p>{step}</p>
+              </li>
+            ))}
+          </ol>
         </div>
-        <p className="moat-banner">{moat}</p>
+        <div className="demo-stage live-demo-stage" aria-label="Golden path demo">
+          <div className="demo-phone request">
+            <div className="phone-bar" />
+            <p className="mini-label">Intake</p>
+            <strong>“Monday, 35 people, veggie, 12:00 to 12:30, invoice.”</strong>
+            <span>AI intake structures date, headcount, diet, allergens, budget, location and delivery window.</span>
+          </div>
+          <div className="demo-phone matches">
+            <div className="phone-bar" />
+            <p className="mini-label">Broadcast</p>
+            <CookCard name="Brigitte" status="matches capacity, area, budget" />
+            <CookCard name="Mehmet" status="matches capacity, area, budget" />
+            <CookCard name="Mina" status="matches capacity, area, budget" />
+          </div>
+          <div className="demo-phone status">
+            <div className="phone-bar" />
+            <p className="mini-label">Secured</p>
+            <StatusLine label="Brigitte accepted" state="ok" />
+            <StatusLine label="Chat open for details" state="hot" />
+            <StatusLine label="Confirmation & invoice" state="ok" />
+            <StatusLine label="Fallback: re-broadcast" state="hot" />
+          </div>
+        </div>
       </div>
     </Slide>
   )
@@ -350,20 +370,50 @@ function WhyNowSlide() {
 
 function MarketSlide() {
   return (
-    <Slide eyebrow="Market + Competition">
+    <Slide eyebrow="Market">
       <div className="market-layout">
         <div className="market-copy">
-          <h2>Where Caterists wins</h2>
+          <h2>Hamburg first, DACH later</h2>
           <div className="segment-chips">
             {segments.map((segment) => (
               <span key={segment}>{segment}</span>
             ))}
           </div>
           <ul className="win-list">
-            {winPoints.map((point) => (
+            {marketPoints.map((point) => (
               <li key={point}>{point}</li>
             ))}
           </ul>
+        </div>
+        <div className="channel-primary market-card">
+          <span className="tag">MVP wedge</span>
+          <strong>We bring verified cooks and B2B demand together</strong>
+          <p>
+            Focused on office managers, coworking spaces and event teams who juggle several caterers
+            today and need one binding commitment.
+          </p>
+        </div>
+      </div>
+    </Slide>
+  )
+}
+
+function CompetitionSlide() {
+  return (
+    <Slide eyebrow="Competition">
+      <div className="market-layout">
+        <div className="market-copy">
+          <h2>No profile shopping, no bidding</h2>
+          <ul className="win-list">
+            {competitionPoints.map((point) => (
+              <li key={point}>{point}</li>
+            ))}
+          </ul>
+          <div className="segment-chips">
+            {winPoints.map((point) => (
+              <span key={point}>{point}</span>
+            ))}
+          </div>
         </div>
         <div className="matrix" aria-label="Competitive positioning matrix">
           {quadrants.map((quadrant) => (
@@ -382,9 +432,9 @@ function MarketSlide() {
 
 function BusinessSlide() {
   return (
-    <Slide eyebrow="Business Model + Traction" tone="blue">
-      <div className="business-layout">
-        <h2>12% take-rate on confirmed orders</h2>
+    <Slide eyebrow="Business + GTM + Traction" tone="blue">
+      <div className="business-layout business-compact">
+        <h2>12% take-rate, Hamburg pilots, three waitlist tracks</h2>
         <div className="model-row">
           {model.map((item) => (
             <article key={item.label}>
@@ -393,8 +443,16 @@ function BusinessSlide() {
             </article>
           ))}
         </div>
+        <div className="traction-row">
+          {traction.map((item) => (
+            <article key={item.label}>
+              <span>{item.label}</span>
+              <p>{item.body}</p>
+            </article>
+          ))}
+        </div>
         <div className="evidence-row">
-          <p className="evidence-label">What we validated in Hamburg conversations</p>
+          <p className="evidence-label">{trackingNote}</p>
           <div className="evidence-cards">
             {evidence.map((quote) => (
               <blockquote key={quote}>{quote}</blockquote>
@@ -416,50 +474,30 @@ function BusinessSlide() {
   )
 }
 
-function GtmSlide() {
-  return (
-    <Slide eyebrow="Go-to-Market">
-      <div className="gtm-layout">
-        <h2>How the first 50 customers find us</h2>
-        <div className="gtm-grid">
-          <article className="channel-primary">
-            <span className="tag">{gtmPrimary.tag}</span>
-            <strong>{gtmPrimary.title}</strong>
-            <p>{gtmPrimary.body}</p>
-          </article>
-          <div className="gtm-side">
-            {gtmSide.map((item) => (
-              <article key={item.title}>
-                <span className="tag">{item.tag}</span>
-                <strong>{item.title}</strong>
-                <p className={item.funnel ? 'funnel' : undefined}>{item.body}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </div>
-    </Slide>
-  )
-}
-
 function TeamSlide() {
   return (
     <Slide eyebrow="Team + Ask">
       <div className="team-layout">
         <div className="team-head">
-          <h2>The team and the ask</h2>
+          <h2>Team and the ask</h2>
           <div className="team-cards">
             {team.map((member) => (
               <article key={member.name}>
-                <strong>{member.name}</strong>
-                <span>{member.role}</span>
+                <img className="team-avatar" src={member.image} alt={member.name} width={88} height={88} />
+                <div className="team-meta">
+                  <strong>{member.name}</strong>
+                  <span>{member.role}</span>
+                  <a className="team-email" href={`mailto:${member.email}`}>
+                    {member.email}
+                  </a>
+                </div>
               </article>
             ))}
           </div>
           <p className="team-edge">{teamEdge}</p>
         </div>
         <div className="ask-block">
-          <p className="mini-label">The ask: no money, just the right first partners</p>
+          <p className="mini-label">No money, just the right first partners</p>
           <div className="ask-grid">
             {askItems.map((item) => (
               <article key={item}>
@@ -467,7 +505,7 @@ function TeamSlide() {
               </article>
             ))}
           </div>
-          <p className="contact">hello@caterists.com · Hamburg, Germany</p>
+          <p className="contact">Hamburg, Germany</p>
         </div>
       </div>
     </Slide>
@@ -480,7 +518,7 @@ function CookCard({ name, status }: Readonly<{ name: string; status: string }>) 
       <span />
       <div>
         <strong>{name}</strong>
-        <p>{status} to accept</p>
+        <p>{status}</p>
       </div>
     </article>
   )

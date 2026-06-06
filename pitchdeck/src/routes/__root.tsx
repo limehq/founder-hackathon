@@ -13,7 +13,7 @@ export const Route = createRootRoute({
       {
         name: 'description',
         content:
-          'Caterists is a pitch deck for a verified homemade catering marketplace in Hamburg with AI intake, broadcast matching, first binding accept, and a Home-Pro pathway.',
+          'Caterists is a pitch deck for a verified catering marketplace in Hamburg with AI intake, broadcast matching, binding accept and a Home-Pro pathway.',
       },
     ],
     links: [
