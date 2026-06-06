@@ -5,143 +5,117 @@ export const Route = createFileRoute('/')({
   component: PitchDeck,
 })
 
+type Panel = 'problem' | 'solution' | 'demo' | 'why' | 'market' | 'pathway' | 'team'
+
 type Slide = {
   eyebrow: string
   title: string
-  proof: string
-  bullets: string[]
-  panel: 'problem' | 'solution' | 'demo' | 'why' | 'market' | 'pathway' | 'team'
+  subtitle: string
+  focus: string
+  points: string[]
+  panel: Panel
 }
 
 type DemoStep = {
   label: string
   title: string
-  body: string
-  meta: string
+  detail: string
 }
 
 const slides: Slide[] = [
   {
     eyebrow: '01 / Problem + Customer',
-    title: 'Last-minute team catering still runs on phone calls.',
-    proof: 'Hamburg office managers, coworking teams, and event organizers lose time when tomorrow’s lunch becomes a supplier chase.',
-    bullets: [
-      'They call multiple caterers for capacity, allergens, delivery windows, and prices.',
-      'Responses are inconsistent, hard to compare, and rarely invoice-ready.',
-      'If one caterer declines or goes silent, the search starts again.',
-    ],
+    title: 'Talented home cooks need a legal path to real catering income.',
+    subtitle: 'Housewives, parents on leave, retirees, and side-hustlers can cook, but cannot safely sell B2B catering from an unverified private kitchen.',
+    focus: 'Mission: turn cooking talent into planned, compliant side income.',
+    points: ['Cooking talent', 'No safe route', 'Lost income'],
     panel: 'problem',
   },
   {
     eyebrow: '02 / Solution + Product',
-    title: 'Tablo turns one request into reliable catering options.',
-    proof: 'One structured request reaches verified local micro-caterers, then Tablo keeps the booking moving with comparable offers and backup matching.',
-    bullets: [
-      'AI-assisted intake extracts date, headcount, diet, budget, address, and delivery window.',
-      'Verified micro-caterers receive requests that match capacity, cuisine, and coverage.',
-      'The buyer compares structured offers and books through one B2B flow.',
-    ],
+    title: 'Tablo is a Pathway marketplace.',
+    subtitle: 'We start with verified micro-caterers, then guide home cooks step by step toward Home-Pro supply.',
+    focus: 'No uncontrolled hobby-cook marketplace. Trust comes first.',
+    points: ['Verified today', 'Pathway tomorrow', 'Trust always'],
     panel: 'solution',
   },
   {
     eyebrow: '03 / Clickable Demo',
-    title: 'From panic to booked in one flow.',
-    proof: 'Click through the golden path: intake, AI parse, matches, timeout, backup, comparison, confirmation.',
-    bullets: [
-      'The demo is scripted mockup behavior, not a fake backend.',
-      'It shows the specific workflow judges need to understand in under one minute.',
-      'The core proof is not AI novelty; it is reduced coordination failure.',
-    ],
+    title: 'The first wedge is reliable team catering.',
+    subtitle: 'Offices create the paid demand. Tablo makes the request structured, verified, and backed up.',
+    focus: 'Demo flow: request → matches → failure → backup → booked.',
+    points: ['Paid demand', 'Verified supply', 'Backup matching'],
     panel: 'demo',
   },
   {
     eyebrow: '04 / Why Now',
-    title: 'AI makes messy catering requests machine-readable.',
-    proof: 'The wedge works now because intake chaos can be structured instantly while local supply needs better demand than phone calls and Google listings.',
-    bullets: [
-      'Hybrid teams create short-notice workshops, offsites, and team lunches.',
-      'AI converts natural language into the fields caterers need to quote quickly.',
-      'Tablo is more than a wrapper because fulfillment depends on verified local supply and backup operations.',
-    ],
+    title: 'AI makes the pathway operational.',
+    subtitle: 'AI turns vague catering needs into structured briefs, while the Pathway turns informal cooking talent into trusted supply.',
+    focus: 'AI helps coordination. Compliance protects trust.',
+    points: ['AI intake', 'Trust checks', 'Local supply'],
     panel: 'why',
   },
   {
     eyebrow: '05 / Market + Competition',
-    title: 'Start with Hamburg teams that cannot afford catering failure.',
-    proof: 'The first market is bottom-up: offices, coworking spaces, and event teams buying 15-50 person catering with 24-72h lead time.',
-    bullets: [
-      'Status quo: phone calls, Google searches, spreadsheets, and fragmented invoices.',
-      'Large caterers are often slow or inflexible for last-minute smaller events.',
-      'Generic food platforms do not solve B2B trust, allergens, invoices, or backup reliability.',
-    ],
+    title: 'Hamburg is the starting city, not the whole ambition.',
+    subtitle: 'Demand starts with offices and events. Supply starts with micro-caterers and expands through the Home-Pro Pathway.',
+    focus: 'Win by combining verified local supply with a legal path for new supply.',
+    points: ['Offices', 'Micro-caterers', 'Home-Pro future'],
     panel: 'market',
   },
   {
     eyebrow: '06 / Business + GTM + Pathway',
-    title: 'Verified supply today. A compliant path for home cooks tomorrow.',
-    proof: 'Tablo starts with verified micro-caterers, then opens a Pathway for talented home cooks to become trusted Home-Pro providers.',
-    bullets: [
-      'Business model: 12% take-rate on confirmed bookings; later optional Pro visibility for caterers.',
-      'First 50 customers: direct outreach to Hamburg offices, coworking spaces, event organizers, and micro-caterers.',
-      'Compliance line: unverified private kitchens are not listed for B2B catering.',
-    ],
+    title: 'The business starts where trust is already possible.',
+    subtitle: 'Revenue comes from confirmed catering bookings. The Pathway grows supply without breaking the trust promise.',
+    focus: 'Important: unverified private kitchens are never live B2B supply.',
+    points: ['12% take-rate', 'Pilot customers', 'Pathway interest'],
     panel: 'pathway',
   },
   {
     eyebrow: '07 / Team + Ask',
-    title: 'A small team building the operational wedge first.',
-    proof: 'Jurij Koch and Sebil Satici cover product, engineering, AI prototyping, design, pitch, and market validation for the hackathon sprint.',
-    bullets: [
-      'Ask: 3-5 Hamburg pilot offices or coworking spaces.',
-      'Ask: 10 pilot micro-caterers and 1-2 professional kitchen or cloud-kitchen partners.',
-      'Ask: a mentor for DACH food-law and hygiene compliance.',
-    ],
+    title: 'We need pilots, supply, and compliance help.',
+    subtitle: 'Jurij Koch and Sebil Satici are building the first working version and validating both sides: demand and future supply.',
+    focus: 'Ask: help us prove the Pathway marketplace in Hamburg.',
+    points: ['Pilot offices', 'Micro-caterers', 'Food-law mentor'],
     panel: 'team',
   },
 ]
 
 const demoSteps: DemoStep[] = [
   {
-    label: 'Intake',
-    title: '“Workshop lunch tomorrow, 35 people.”',
-    body: 'Office manager enters a natural-language request with vegetarian options, nut allergy, budget, and HafenCity delivery.',
-    meta: 'Thursday 16:00 / 24-72h window',
+    label: 'Request',
+    title: '“Lunch tomorrow, 35 people.”',
+    detail: 'The buyer writes the need like a normal message.',
   },
   {
-    label: 'AI parse',
-    title: 'The request becomes quote-ready fields.',
-    body: 'Date, delivery time, headcount, allergens, diet, budget, location, and delivery window are extracted for review.',
-    meta: 'No caterer has to decode a messy brief',
+    label: 'Parse',
+    title: 'Tablo extracts the facts.',
+    detail: 'Date, time, headcount, diet, allergens, budget, address.',
   },
   {
-    label: 'Matches',
-    title: 'Three verified caterers are selected.',
-    body: 'Hard filters check delivery area, capacity, diet fit, budget, and lead time; soft ranking weighs reliability and response speed.',
-    meta: 'Verified Micro-Caterer / Stage 1 supply',
+    label: 'Match',
+    title: 'Three verified caterers fit.',
+    detail: 'Only suppliers with capacity, coverage, and trust checks appear.',
   },
   {
-    label: 'Failure',
-    title: 'One declines. One stays silent.',
-    body: 'The status flow makes failure visible instead of forcing the buyer to chase suppliers manually.',
-    meta: 'Reliability is operational, not a star rating',
+    label: 'Fail',
+    title: 'One declines. One is silent.',
+    detail: 'The buyer sees the problem instead of chasing it manually.',
   },
   {
     label: 'Backup',
-    title: 'Backup matching activates automatically.',
-    body: 'A qualified backup caterer receives the same structured brief and clear deadline.',
-    meta: 'Core wedge: last-minute reliability',
+    title: 'A backup caterer activates.',
+    detail: 'Tablo sends the same structured brief to another qualified supplier.',
   },
   {
     label: 'Compare',
-    title: 'Two structured offers are compared.',
-    body: 'The buyer compares menu package, allergens, delivery window, price range, and verification signals side by side.',
-    meta: 'B2B decision without phone chaos',
+    title: 'Two offers are easy to compare.',
+    detail: 'Menu, price, allergens, delivery window, verification.',
   },
   {
     label: 'Booked',
-    title: 'The team lunch is confirmed.',
-    body: 'Booking confirmation, invoice-ready summary, delivery status, and caterer reliability updates close the loop.',
-    meta: 'Outcome: tomorrow is handled',
+    title: 'Tomorrow is handled.',
+    detail: 'The buyer gets confirmation and an invoice-ready summary.',
   },
 ]
 
@@ -201,15 +175,17 @@ function PitchDeck() {
         <div className="slide-copy">
           <p className="eyebrow">{slide.eyebrow}</p>
           <h1>{slide.title}</h1>
-          <p className="proof">{slide.proof}</p>
-          <div className="bullets" aria-label="Slide points">
-            {slide.bullets.map((bullet) => (
-              <p key={bullet}>{bullet}</p>
-            ))}
-          </div>
+          <p className="subtitle">{slide.subtitle}</p>
+          <p className="focus">{slide.focus}</p>
         </div>
 
         <SlidePanel panel={slide.panel} demoStep={demoStep} setDemoStep={setDemoStep} />
+
+        <div className="point-strip" aria-label="Slide keywords">
+          {slide.points.map((point) => (
+            <span key={point}>{point}</span>
+          ))}
+        </div>
       </section>
 
       <footer className="bottom-bar">
@@ -240,7 +216,7 @@ function SlidePanel({
   demoStep,
   setDemoStep,
 }: Readonly<{
-  panel: Slide['panel']
+  panel: Panel
   demoStep: number
   setDemoStep: (step: number) => void
 }>) {
@@ -250,16 +226,9 @@ function SlidePanel({
     return (
       <aside className="visual-card demo-card" aria-label="Clickable demo">
         <div className="demo-screen">
-          <div className="window-bar">
-            <span />
-            <span />
-            <span />
-            <strong>tablo.app/request</strong>
-          </div>
-          <p className="kicker">{step.label}</p>
+          <p className="kicker">Step {demoStep + 1}</p>
           <h2>{step.title}</h2>
-          <p>{step.body}</p>
-          <div className="demo-meta">{step.meta}</div>
+          <p>{step.detail}</p>
         </div>
         <div className="demo-steps">
           {demoSteps.map((item, index) => (
@@ -269,7 +238,6 @@ function SlidePanel({
               onClick={() => setDemoStep(index)}
               type="button"
             >
-              <span>{index + 1}</span>
               {item.label}
             </button>
           ))}
@@ -281,17 +249,9 @@ function SlidePanel({
   if (panel === 'pathway') {
     return (
       <aside className="visual-card pathway-card" aria-label="Pathway stages">
-        <div className="pathway-stage live">
-          <span>Stage 1 / Live MVP</span>
-          <strong>Verified Micro-Caterer</strong>
-          <p>Business registration, professional kitchen, hygiene self-check, allergens, capacity, delivery area, liability confirmation.</p>
-        </div>
-        <div className="pathway-stage vision">
-          <span>Stage 2 / Vision</span>
-          <strong>Home-Pro Pathway</strong>
-          <p>Home cooks, housewives, parents on leave, retirees, and side-hustlers register interest, then complete business, hygiene, allergen, liability, and partner-kitchen steps.</p>
-        </div>
-        <div className="compliance-line">Private kitchens without verification are not listed for B2B catering.</div>
+        <SimpleStage label="Today" title="Verified Micro-Caterers" text="Already legal, already checked, ready for B2B catering." />
+        <SimpleStage label="Next" title="Home-Pro Pathway" text="Housewives, parents, retirees, and side-hustlers get a compliant route into paid cooking." />
+        <div className="compliance-line">No unverified private kitchens in the live marketplace.</div>
       </aside>
     )
   }
@@ -304,46 +264,55 @@ function SlidePanel({
           <strong>Sebil Satici</strong>
         </div>
         <div className="ask-grid">
-          <span>3-5 pilot offices</span>
-          <span>10 micro-caterers</span>
-          <span>1-2 kitchen partners</span>
+          <span>Pilot offices</span>
+          <span>Micro-caterers</span>
+          <span>Kitchen partners</span>
           <span>Food-law mentor</span>
         </div>
-        <div className="contact-card">tablo / Hamburg-first / June 2026</div>
       </aside>
     )
   }
 
-  const panelContent: Record<Exclude<Slide['panel'], 'demo' | 'pathway' | 'team'>, { title: string; rows: string[] }> = {
+  const model: Record<Exclude<Panel, 'demo' | 'pathway' | 'team'>, { before: string; after: string; label: string }> = {
     problem: {
-      title: 'Current workflow',
-      rows: ['Call caterers', 'Ask about allergens', 'Wait for quotes', 'Chase silence', 'Restart after failure'],
+      before: 'Talent → No legal route → No income',
+      after: 'The supply problem',
+      label: 'Mission',
     },
     solution: {
-      title: 'Tablo workflow',
-      rows: ['One request', 'AI-structured brief', 'Verified supply', 'Comparable offers', 'Backup matching'],
+      before: 'Micro-caterer → Home-Pro → Resident-Heim',
+      after: 'A staged path, not a free-for-all',
+      label: 'Tablo',
     },
     why: {
-      title: 'Why now',
-      rows: ['Hybrid work events', 'AI intake quality', 'Local supply pressure', 'B2B trust gap', 'Cost of coordination'],
+      before: 'Messy request + informal supply',
+      after: 'Structured brief + verified pathway',
+      label: 'Why now',
     },
     market: {
-      title: 'Beachhead',
-      rows: ['Hamburg offices', 'Coworking spaces', 'Event teams', '15-50 people', '24-72h lead time'],
+      before: 'Demand today → Supply expansion tomorrow',
+      after: 'Hamburg offices fund the first Pathway',
+      label: 'Beachhead',
     },
   }
 
-  const content = panelContent[panel]
+  const content = model[panel]
 
   return (
-    <aside className="visual-card stack-card" aria-label={content.title}>
-      <h2>{content.title}</h2>
-      {content.rows.map((row, index) => (
-        <div className="stack-row" key={row}>
-          <span>{String(index + 1).padStart(2, '0')}</span>
-          <strong>{row}</strong>
-        </div>
-      ))}
+    <aside className="visual-card simple-card" aria-label={content.label}>
+      <p className="kicker">{content.label}</p>
+      <strong>{content.before}</strong>
+      <span>{content.after}</span>
     </aside>
+  )
+}
+
+function SimpleStage({ label, title, text }: Readonly<{ label: string; title: string; text: string }>) {
+  return (
+    <div className="pathway-stage">
+      <span>{label}</span>
+      <strong>{title}</strong>
+      <p>{text}</p>
+    </div>
   )
 }
