@@ -1,10 +1,13 @@
 <!doctype html>
-<html lang="en" data-theme="stone">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Caterists · Caterer Back Office</title>
   <link rel="icon" href="/assets/avatars/03.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
   <link rel="stylesheet" href="/lib/colors_and_type.css">
   <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
   <script>
@@ -28,39 +31,57 @@
           'sidebar-accent': 'var(--sidebar-accent)', 'sidebar-border': 'var(--sidebar-border)',
         },
         borderRadius: { sm: 'var(--radius-sm)', md: 'var(--radius-md)', lg: 'var(--radius-lg)', xl: 'var(--radius-xl)', '2xl': 'var(--radius-2xl)' },
-        fontFamily: { sans: ['Geist', 'ui-sans-serif', 'system-ui'], mono: ['Geist Mono', 'ui-monospace'] },
+        fontFamily: { sans: ['DM Sans', 'ui-sans-serif', 'system-ui'], heading: ['Plus Jakarta Sans', 'ui-sans-serif'], mono: ['Geist Mono', 'ui-monospace'] },
       }}
     }
   </script>
   <style>
-    /* ---- Caterists warm treatment: stone neutrals + terracotta brand ---- */
+    /* ---- Caterists brand (Neo-Brutalist Pop), applied calmly: palette + fonts ---- */
     :root {
-      --brand: oklch(0.62 0.145 47);
-      --brand-foreground: oklch(0.99 0.012 80);
-      --brand-muted: oklch(0.955 0.03 60);
-      --primary: oklch(0.62 0.145 47);
-      --primary-foreground: oklch(0.99 0.012 80);
-      --ring: oklch(0.62 0.145 47);
-      --success: oklch(0.6 0.12 150);
-      --success-foreground: oklch(0.99 0.01 150);
-      --success-muted: oklch(0.95 0.045 150);
-      --warning: oklch(0.74 0.135 72);
-      --warning-foreground: oklch(0.27 0.05 70);
-      --warning-muted: oklch(0.96 0.06 80);
-      --info-muted: oklch(0.95 0.03 250);
-      --info: oklch(0.55 0.12 250);
-      --sidebar: oklch(0.987 0.004 75);
-      --sidebar-foreground: oklch(0.22 0.01 60);
-      --sidebar-primary: oklch(0.62 0.145 47);
-      --sidebar-accent: oklch(0.96 0.012 70);
-      --sidebar-border: oklch(0.915 0.006 70);
-      --background: oklch(0.992 0.003 75);
-      --card: oklch(1 0 0);
+      --font-sans: 'DM Sans', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --font-heading: 'Plus Jakarta Sans', var(--font-sans);
+
+      --background: #ECEADF;       /* nb-bg */
+      --foreground: #141414;       /* nb-ink */
+      --card: #FFFFFF;
+      --card-foreground: #141414;
+      --popover: #FFFFFF;
+      --popover-foreground: #141414;
+
+      --brand: #6E3FE0;            /* nb-purple */
+      --brand-foreground: #FFFFFF;
+      --brand-muted: #EBE4FB;      /* nb-purple-soft */
+      --primary: #6E3FE0;
+      --primary-foreground: #FFFFFF;
+      --ring: #6E3FE0;
+
+      --secondary: #E3E0D2;        /* nb-bg2 */
+      --secondary-foreground: #141414;
+      --muted: #E3E0D2;
+      --muted-foreground: #57544B; /* nb-muted */
+      --accent: #EBE4FB;           /* purple-soft hover */
+      --accent-foreground: #141414;
+
+      --success: #4F8A2E; --success-foreground: #FFFFFF; --success-muted: #E8F3D0;
+      --warning: #C98A00; --warning-foreground: #3A2C00; --warning-muted: #FFF0CC;
+      --info: #1E97C9; --info-muted: #DCF1FB;
+      --destructive: #E5502A;      /* nb-coral */
+      --destructive-foreground: #FFFFFF;
+
+      --border: rgba(20,20,20,0.12);
+      --input: rgba(20,20,20,0.18);
+
+      --sidebar: #E3E0D2;          /* nb-bg2 */
+      --sidebar-foreground: #141414;
+      --sidebar-primary: #6E3FE0;
+      --sidebar-accent: #ECEADF;
+      --sidebar-border: rgba(20,20,20,0.10);
     }
+    h1, h2, h3, h4 { font-family: var(--font-heading); letter-spacing: -0.01em; }
     html, body { font-family: var(--font-sans); height: 100%; }
     body { margin: 0; background: var(--background); }
     #root { min-height: 100vh; }
-    .section-label { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted-foreground); }
+    .section-label { font-family: var(--font-sans); font-weight: 600; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted-foreground); }
     .tabular { font-variant-numeric: tabular-nums; }
     /* thin scrollbars */
     ::-webkit-scrollbar { width: 9px; height: 9px; }

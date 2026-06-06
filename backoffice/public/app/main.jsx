@@ -145,11 +145,11 @@ function Topbar({ route, onSimulate, canSimulate, newCount }) {
 /* =================== APP =================== */
 const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
   "layout": "calm",
-  "accent": "#c2683f",
+  "accent": "#6E3FE0",
   "density": "regular"
 }/*EDITMODE-END*/;
 
-const ACCENTS = ['#c2683f', '#bd4b3b', '#5f7d4f', '#c8902e'];
+const ACCENTS = ['#6E3FE0', '#E6197F', '#46BEEA', '#FF6A3D'];
 
 function App() {
   const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);

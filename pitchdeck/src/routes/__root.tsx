@@ -18,7 +18,9 @@ export const Route = createRootRoute({
     ],
     links: [
       { rel: 'stylesheet', href: appCss },
-      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      // BASE_URL is Vite's `base` ('/pitch/'), so the icon resolves under the
+      // sub-path too. appCss is a `?url` import, already base-prefixed by Vite.
+      { rel: 'icon', type: 'image/svg+xml', href: `${import.meta.env.BASE_URL}favicon.svg` },
     ],
   }),
   component: RootComponent,
