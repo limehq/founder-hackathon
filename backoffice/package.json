@@ -1,0 +1,16 @@
+{
+  "name": "caterists-backoffice",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Caterists Caterer Back Office — clickable static prototype (CDN React + Tailwind, in-browser Babel), served by Vite.",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.2.7"
+  }
+}

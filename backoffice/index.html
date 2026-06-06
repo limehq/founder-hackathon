@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" data-theme="stone">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caterists · Caterer Back Office</title>
+  <link rel="icon" href="/assets/avatars/03.png">
+  <link rel="stylesheet" href="/lib/colors_and_type.css">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: {
+        colors: {
+          background: 'var(--background)', foreground: 'var(--foreground)',
+          card: 'var(--card)', 'card-foreground': 'var(--card-foreground)',
+          popover: 'var(--popover)', 'popover-foreground': 'var(--popover-foreground)',
+          primary: 'var(--primary)', 'primary-foreground': 'var(--primary-foreground)',
+          secondary: 'var(--secondary)', 'secondary-foreground': 'var(--secondary-foreground)',
+          muted: 'var(--muted)', 'muted-foreground': 'var(--muted-foreground)',
+          accent: 'var(--accent)', 'accent-foreground': 'var(--accent-foreground)',
+          destructive: 'var(--destructive)',
+          success: 'var(--success)', 'success-foreground': 'var(--success-foreground)',
+          warning: 'var(--warning)', 'warning-foreground': 'var(--warning-foreground)',
+          brand: 'var(--brand)', 'brand-foreground': 'var(--brand-foreground)',
+          border: 'var(--border)', input: 'var(--input)', ring: 'var(--ring)',
+          sidebar: 'var(--sidebar)', 'sidebar-foreground': 'var(--sidebar-foreground)',
+          'sidebar-accent': 'var(--sidebar-accent)', 'sidebar-border': 'var(--sidebar-border)',
+        },
+        borderRadius: { sm: 'var(--radius-sm)', md: 'var(--radius-md)', lg: 'var(--radius-lg)', xl: 'var(--radius-xl)', '2xl': 'var(--radius-2xl)' },
+        fontFamily: { sans: ['Geist', 'ui-sans-serif', 'system-ui'], mono: ['Geist Mono', 'ui-monospace'] },
+      }}
+    }
+  </script>
+  <style>
+    /* ---- Caterists warm treatment: stone neutrals + terracotta brand ---- */
+    :root {
+      --brand: oklch(0.62 0.145 47);
+      --brand-foreground: oklch(0.99 0.012 80);
+      --brand-muted: oklch(0.955 0.03 60);
+      --primary: oklch(0.62 0.145 47);
+      --primary-foreground: oklch(0.99 0.012 80);
+      --ring: oklch(0.62 0.145 47);
+      --success: oklch(0.6 0.12 150);
+      --success-foreground: oklch(0.99 0.01 150);
+      --success-muted: oklch(0.95 0.045 150);
+      --warning: oklch(0.74 0.135 72);
+      --warning-foreground: oklch(0.27 0.05 70);
+      --warning-muted: oklch(0.96 0.06 80);
+      --info-muted: oklch(0.95 0.03 250);
+      --info: oklch(0.55 0.12 250);
+      --sidebar: oklch(0.987 0.004 75);
+      --sidebar-foreground: oklch(0.22 0.01 60);
+      --sidebar-primary: oklch(0.62 0.145 47);
+      --sidebar-accent: oklch(0.96 0.012 70);
+      --sidebar-border: oklch(0.915 0.006 70);
+      --background: oklch(0.992 0.003 75);
+      --card: oklch(1 0 0);
+    }
+    html, body { font-family: var(--font-sans); height: 100%; }
+    body { margin: 0; background: var(--background); }
+    #root { min-height: 100vh; }
+    .section-label { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted-foreground); }
+    .tabular { font-variant-numeric: tabular-nums; }
+    /* thin scrollbars */
+    ::-webkit-scrollbar { width: 9px; height: 9px; }
+    ::-webkit-scrollbar-thumb { background: oklch(0.85 0.01 70); border-radius: 8px; border: 2px solid var(--background); }
+    ::-webkit-scrollbar-thumb:hover { background: oklch(0.78 0.01 70); }
+    /* density */
+    [data-density="compact"] { --row-pad: 0.5rem; }
+    [data-density="comfy"] { --row-pad: 1rem; }
+    [data-density="regular"] { --row-pad: 0.75rem; }
+    /* transform-only entrance, never starts at opacity:0, so a backgrounded
+       iframe (which pauses CSS animations at frame 0) still shows content. */
+    @keyframes tablo-in { from { transform: translateY(9px); } to { transform: none; } }
+    .tablo-in { animation: tablo-in 0.34s cubic-bezier(0.22,1,0.36,1) both; }
+    @keyframes toast-in { from { transform: translateX(26px) scale(0.98); } to { transform: none; } }
+    .toast-in { animation: toast-in 0.4s cubic-bezier(0.22,1,0.36,1) both; }
+    @media (prefers-reduced-motion: reduce) { .tablo-in, .toast-in { animation: none; } }
+    @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 color-mix(in oklch, var(--brand) 45%, transparent); } 70% { box-shadow: 0 0 0 10px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+    .pulse-ring { animation: pulse-ring 1.8s ease-out infinite; }
+  </style>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-background text-foreground antialiased" data-density="regular">
+  <div id="root"></div>
+  <script type="text/babel" src="/lib/components.jsx"></script>
+  <script type="text/babel" src="/lib/tweaks-panel.jsx"></script>
+  <script type="text/babel" src="/app/data.jsx"></script>
+  <script type="text/babel" src="/app/ui.jsx"></script>
+  <script type="text/babel" src="/app/dashboard.jsx"></script>
+  <script type="text/babel" src="/app/leads.jsx"></script>
+  <script type="text/babel" src="/app/calendar.jsx"></script>
+  <script type="text/babel" src="/app/kitchen.jsx"></script>
+  <script type="text/babel" src="/app/earnings.jsx"></script>
+  <script type="text/babel" src="/app/profile.jsx"></script>
+  <script type="text/babel" src="/app/main.jsx"></script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* ============================================================
+ * shadcn/ui — colors & type
+ * Authoritative tokens mirrored from the shadcn-ui/ui repo
+ * (apps/v4/app/globals.css, registry/themes.ts, registry/fonts.ts)
+ *
+ * shadcn/ui uses Tailwind CSS v4 + oklch() + CSS variables.
+ * Consumers customize by swapping the variables in :root / .dark.
+ * ============================================================ */
+
+/* ---------- Fonts (Google Fonts; pick any from the FONT_DEFINITIONS set) ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* ============================================================
+ * TYPE
+ *   --font-sans   — body + UI. Default: Geist.
+ *   --font-heading — optional distinct heading font.
+ *   --font-mono   — code / kbd / numbers.
+ *   --font-serif  — optional editorial variant.
+ * ============================================================ */
+:root {
+  --font-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: var(--font-sans);
+  --font-mono: 'Geist Mono', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-serif: 'Instrument Serif', ui-serif, Georgia, serif;
+
+  /* Type scale — shadcn does not ship opinionated sizes; these match the
+     Tailwind defaults the docs site actually uses. */
+  --text-xs:   0.75rem;  /* 12 */
+  --text-sm:   0.875rem; /* 14 */
+  --text-base: 1rem;     /* 16 */
+  --text-lg:   1.125rem; /* 18 */
+  --text-xl:   1.25rem;  /* 20 */
+  --text-2xl:  1.5rem;   /* 24 */
+  --text-3xl:  1.875rem; /* 30 */
+  --text-4xl:  2.25rem;  /* 36 */
+  --text-5xl:  3rem;     /* 48 */
+  --text-6xl:  3.75rem;  /* 60 */
+
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.025em;
+}
+
+/* ============================================================
+ * COLOR — default "Neutral" theme (oklch).
+ * 7 base neutrals ship with the system; one is active at a time:
+ *   neutral · stone · zinc · mauve · olive · mist · taupe
+ * plus accent primaries: blue, orange, green, red, rose, violet, etc.
+ * ============================================================ */
+:root {
+  --radius: 0.625rem;
+
+  /* Surfaces */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+
+  /* Primary / Secondary / Muted / Accent */
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+
+  /* Semantic */
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.97 0.01 17);
+
+  /* Structural */
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+
+  /* Charts */
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+
+  /* Sidebar */
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+
+  /* Code / surface (added in v4) */
+  --surface: oklch(0.98 0 0);
+  --surface-foreground: var(--foreground);
+  --code: var(--surface);
+  --code-foreground: var(--surface-foreground);
+  --code-highlight: oklch(0.96 0 0);
+  --code-number: oklch(0.56 0 0);
+  --selection: oklch(0.145 0 0);
+  --selection-foreground: oklch(1 0 0);
+}
+
+/* ---------- Dark mode ---------- */
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.371 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.58 0.22 27);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.439 0 0);
+  --surface: oklch(0.2 0 0);
+  --surface-foreground: oklch(0.708 0 0);
+  --code-highlight: oklch(0.27 0 0);
+  --code-number: oklch(0.72 0 0);
+  --selection: oklch(0.922 0 0);
+  --selection-foreground: oklch(0.205 0 0);
+}
+
+/* ============================================================
+ * BASE NEUTRAL THEMES
+ * Apply to :root or toggle via data-theme attr to swap the
+ * whole neutral ramp. These are the 7 shipped base colors.
+ * ============================================================ */
+[data-theme="stone"] {
+  --foreground: oklch(0.147 0.004 49.25);
+  --primary: oklch(0.216 0.006 56.043);
+  --primary-foreground: oklch(0.985 0.001 106.423);
+  --secondary: oklch(0.97 0.001 106.424);
+  --muted: oklch(0.97 0.001 106.424);
+  --muted-foreground: oklch(0.553 0.013 58.071);
+  --accent: oklch(0.97 0.001 106.424);
+  --border: oklch(0.923 0.003 48.717);
+  --ring: oklch(0.709 0.01 56.259);
+}
+[data-theme="zinc"] {
+  --foreground: oklch(0.141 0.005 285.823);
+  --primary: oklch(0.21 0.006 285.885);
+  --secondary: oklch(0.967 0.001 286.375);
+  --muted: oklch(0.967 0.001 286.375);
+  --muted-foreground: oklch(0.552 0.016 285.938);
+  --border: oklch(0.92 0.004 286.32);
+  --ring: oklch(0.705 0.015 286.067);
+}
+[data-theme="mauve"]  { --foreground: oklch(0.145 0.008 326); --primary: oklch(0.212 0.019 322.12); --muted-foreground: oklch(0.542 0.034 322.5); --border: oklch(0.922 0.005 325.62); }
+[data-theme="olive"]  { --foreground: oklch(0.153 0.006 107.1); --primary: oklch(0.228 0.013 107.4); --muted-foreground: oklch(0.58 0.031 107.3); --border: oklch(0.93 0.007 106.5); }
+[data-theme="mist"]   { --foreground: oklch(0.148 0.004 228.8); --primary: oklch(0.218 0.008 223.9); --muted-foreground: oklch(0.56 0.021 213.5); --border: oklch(0.925 0.005 214.3); }
+[data-theme="taupe"]  { --foreground: oklch(0.147 0.004 49.3); --primary: oklch(0.214 0.009 43.1); --muted-foreground: oklch(0.547 0.021 43.1); --border: oklch(0.922 0.005 34.3); }
+
+/* ============================================================
+ * SEMANTIC TYPE ROLES
+ * Use these classes or drop their rules into your own elements.
+ * ============================================================ */
+html, body { font-family: var(--font-sans); color: var(--foreground); background: var(--background); }
+
+.h1 { font-family: var(--font-heading); font-size: var(--text-4xl); font-weight: 700; line-height: var(--leading-tight); letter-spacing: var(--tracking-tight); }
+.h2 { font-family: var(--font-heading); font-size: var(--text-3xl); font-weight: 600; line-height: var(--leading-tight); letter-spacing: var(--tracking-tight); }
+.h3 { font-family: var(--font-heading); font-size: var(--text-2xl); font-weight: 600; line-height: var(--leading-snug); }
+.h4 { font-family: var(--font-heading); font-size: var(--text-xl); font-weight: 600; line-height: var(--leading-snug); }
+.lead { font-size: var(--text-xl); color: var(--muted-foreground); line-height: var(--leading-relaxed); }
+.p { font-size: var(--text-base); line-height: var(--leading-normal); }
+.small { font-size: var(--text-sm); font-weight: 500; line-height: var(--leading-snug); }
+.muted { font-size: var(--text-sm); color: var(--muted-foreground); }
+.code { font-family: var(--font-mono); font-size: 0.875em; background: var(--muted); padding: 0.125rem 0.375rem; border-radius: calc(var(--radius) * 0.6); }
+.kbd { font-family: var(--font-mono); font-size: 0.75rem; padding: 0.125rem 0.375rem; border: 1px solid var(--border); border-radius: calc(var(--radius) * 0.6); background: var(--muted); color: var(--muted-foreground); }
+.blockquote { border-left: 2px solid var(--border); padding-left: 1.5rem; font-style: italic; color: var(--muted-foreground); }
+
+/* ============================================================
+ * RADIUS SCALE (Tailwind theme tokens)
+ * --radius-sm = radius * 0.6   · --radius-md = radius * 0.8
+ * --radius-lg = radius         · --radius-xl = radius * 1.4
+ * --radius-2xl = radius * 1.8  · --radius-3xl = radius * 2.2
+ * ============================================================ */
+:root {
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+}
+
+/* ============================================================
+ * SHADOW SYSTEM — Tailwind defaults, used sparingly in shadcn.
+ * The house style is a crisp 1px border, not elevation.
+ * Use shadow-xs on popovers/dialogs; shadow-lg on overlays.
+ * ============================================================ */
+:root {
+  --shadow-xs: 0 1px 2px 0 oklch(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 oklch(0 0 0 / 0.08), 0 1px 2px -1px oklch(0 0 0 / 0.08);
+  --shadow-md: 0 4px 6px -1px oklch(0 0 0 / 0.08), 0 2px 4px -2px oklch(0 0 0 / 0.08);
+  --shadow-lg: 0 10px 15px -3px oklch(0 0 0 / 0.08), 0 4px 6px -4px oklch(0 0 0 / 0.08);
+  --shadow-xl: 0 20px 25px -5px oklch(0 0 0 / 0.08), 0 8px 10px -6px oklch(0 0 0 / 0.08);
+}
