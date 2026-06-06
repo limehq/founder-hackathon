@@ -6,14 +6,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
 <div class="page" id="top">
 
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <a href="/pitch" class="topbar-login">Pitch <i data-lucide="presentation"></i></a>
+    <a href="/backoffice" class="topbar-login">Login <i data-lucide="log-in"></i></a>
+  </div>
+
   <!-- ============ NAV ============ -->
   <nav class="nav">
-    <a href="#top" class="nav-logo"><img src="assets/logo.png" alt="Caterists" /></a>
+    <a href="#top" class="nav-logo"><img src="/assets/logo.png" alt="Caterists" /></a>
     <div class="nav-spacer"></div>
     <div class="nav-right">
       <a href="#top" class="nav-link active">Request now</a>
@@ -58,7 +64,7 @@
       <span class="blob blob-pink"></span>
       <span class="blob blob-lime"></span>
       <span class="blob blob-sky"></span>
-      <img class="hero-photo" src="assets/hero-food.png" alt="Homemade catering" />
+      <img class="hero-photo" src="/assets/hero-food.png" alt="Homemade catering" />
       <span class="sticker-badge">100% homemade</span>
       <i class="spark spark-1" data-lucide="sparkles" style="color:var(--pink)"></i>
       <i class="spark spark-2" data-lucide="sparkles" style="color:var(--sky)"></i>
@@ -88,13 +94,13 @@
         <div class="step-t">Describe your needs</div>
         <div class="step-d">Occasion, guests, date, diet — in your own words or via the form.</div>
       </div>
-      <i class="step-arrow" data-lucide="move-right"></i>
+      <svg class="step-arrow" viewBox="0 0 60 34" fill="none" stroke="#141414" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17C18 5 40 5 54 17"/><path d="M42 15 54 17 50 6"/></svg>
       <div class="step-card" style="transform:rotate(1.5deg)">
         <div class="step-num" style="background:var(--pink)">2</div>
         <div class="step-t">Goes live to the network</div>
         <div class="step-d">Your request instantly reaches every matching, verified Kitchen Partner.</div>
       </div>
-      <i class="step-arrow" data-lucide="move-right"></i>
+      <svg class="step-arrow" viewBox="0 0 60 34" fill="none" stroke="#141414" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17C18 5 40 5 54 17"/><path d="M42 15 54 17 50 6"/></svg>
       <div class="step-card" style="transform:rotate(-1deg)">
         <div class="step-num" style="background:var(--lime)">3</div>
         <div class="step-t">First to accept, bindingly</div>
@@ -230,7 +236,7 @@
   <footer class="footer">
     <div class="foot-top">
       <div class="foot-left">
-        <div class="foot-logo"><img src="assets/logo-light.png" alt="Caterists" /></div>
+        <div class="foot-logo"><img src="/assets/logo-light.png" alt="Caterists" /></div>
         <p class="foot-tag">Homemade catering from real private kitchens. One request, verified partners, a binding confirmation.</p>
         <div class="socials">
           <a class="soc" href="#"><i data-lucide="facebook"></i></a>
@@ -250,13 +256,28 @@
     <div class="foot-divider"></div>
     <div class="foot-bottom">
       <span class="foot-copy">© 2026 Caterists · Imprint · Privacy</span>
-      <a href="#" class="foot-cc">Love to cook? →</a>
+      <a href="/apply/" class="foot-cc">Love to cook? →</a>
     </div>
   </footer>
 
 </div>
 
+<!-- ============ WAITLIST MODAL ============ -->
+<div class="modal-overlay" id="waitlist-modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-h">
+    <button class="modal-close js-modal-close" aria-label="Close"><i data-lucide="x"></i></button>
+    <i class="modal-spark" data-lucide="sparkles" style="color:var(--pink)"></i>
+    <div class="eyebrow" style="color:var(--purple)">JOIN THE WAITLIST</div>
+    <h3 class="modal-h" id="modal-h">You're early!</h3>
+    <p class="modal-sub">We launch in Hamburg soon — leave your email and we'll reach out first.</p>
+    <form class="modal-form js-waitlist">
+      <div class="email-field"><input type="email" placeholder="Your work email" /></div>
+      <button type="submit" class="btn-ink">Join waitlist <i data-lucide="arrow-right"></i></button>
+    </form>
+  </div>
+</div>
+
 <script src="https://unpkg.com/lucide@latest"></script>
-<script src="js/main.js"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>

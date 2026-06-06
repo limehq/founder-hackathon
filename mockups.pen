@@ -13124,7 +13124,7 @@
       "type": "frame",
       "id": "r78wb",
       "x": 0,
-      "y": 6000,
+      "y": 6941,
       "name": "Components",
       "fill": "#ECEADF",
       "cornerRadius": 28,
@@ -15629,6 +15629,4451 @@
       },
       "width": 1024,
       "height": 768
+    },
+    {
+      "type": "frame",
+      "id": "pRRyE",
+      "x": 1640,
+      "y": 0,
+      "name": "Caterer Landing — Love to Cook",
+      "clip": true,
+      "width": 1440,
+      "fill": "$nb-bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "jWzKO",
+          "name": "Nav",
+          "width": "fill_container",
+          "height": 92,
+          "fill": "$nb-bg",
+          "padding": [
+            0,
+            72
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "id": "PTpjT",
+              "type": "ref",
+              "ref": "V4irH",
+              "name": "NavLogo"
+            },
+            {
+              "type": "frame",
+              "id": "gXrI6",
+              "name": "Spacer",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "PB3yp",
+              "name": "RightGroup",
+              "gap": 30,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MMw2U",
+                  "name": "lRequest",
+                  "fill": "$nb-purple",
+                  "content": "Join now",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 15,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "aEZcO",
+                  "name": "lHow",
+                  "fill": "$nb-ink",
+                  "content": "How it works",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "xdTOn",
+                  "name": "lAbout",
+                  "fill": "$nb-ink",
+                  "content": "Pathway",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "uaVHT",
+                  "name": "NavCTA",
+                  "fill": "$nb-white",
+                  "cornerRadius": 9999,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161614",
+                    "offset": {
+                      "x": 0,
+                      "y": 6
+                    },
+                    "blur": 16
+                  },
+                  "padding": [
+                    11,
+                    22
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Gq3sv",
+                      "name": "ncl",
+                      "fill": "$nb-ink",
+                      "content": "Become a Partner",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "G953M",
+          "name": "Hero",
+          "width": "fill_container",
+          "gap": 40,
+          "padding": [
+            60,
+            72,
+            72,
+            72
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "kvhMh",
+              "name": "HeroLeft",
+              "width": 620,
+              "layout": "vertical",
+              "gap": 26,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uXt3P",
+                  "name": "Headline",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dOLvi",
+                      "name": "h1",
+                      "fill": "$nb-ink",
+                      "content": "Love to cook?",
+                      "lineHeight": 1.02,
+                      "fontFamily": "$nb-display",
+                      "fontSize": 54,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QQWDs",
+                      "name": "h2row",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l6OVE",
+                          "name": "h2pre",
+                          "fill": "$nb-ink",
+                          "content": "Get",
+                          "lineHeight": 1,
+                          "fontFamily": "$nb-display",
+                          "fontSize": 54,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "n6H2Y",
+                          "name": "Highlight",
+                          "rotation": -2,
+                          "fill": "$nb-lime",
+                          "cornerRadius": 8,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#16161614",
+                            "offset": {
+                              "x": 0,
+                              "y": 6
+                            },
+                            "blur": 16
+                          },
+                          "padding": [
+                            2,
+                            12
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "tjFiC",
+                              "name": "hb",
+                              "fill": "$nb-ink",
+                              "content": "paid",
+                              "lineHeight": 1,
+                              "fontFamily": "$nb-display",
+                              "fontSize": 54,
+                              "fontWeight": "800"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "HjAPt",
+                          "name": "h2post",
+                          "fill": "$nb-ink",
+                          "content": "for it.",
+                          "lineHeight": 1,
+                          "fontFamily": "$nb-display",
+                          "fontSize": 54,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "iomHj",
+                  "name": "Subhead",
+                  "fill": "$nb-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 560,
+                  "content": "Cook from your own kitchen and earn on your terms. Caterists sends you catering orders from your city that match your capacity — you accept the ones that fit, no cold calls, no chasing.",
+                  "lineHeight": 1.55,
+                  "fontFamily": "$nb-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "amHPt",
+                  "name": "HeroCTAs",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "AaBqh",
+                      "name": "btns",
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "yKMud",
+                          "name": "btn-primary",
+                          "fill": "$nb-purple",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#16161620",
+                            "offset": {
+                              "x": 0,
+                              "y": 6
+                            },
+                            "blur": 16
+                          },
+                          "gap": 8,
+                          "padding": [
+                            16,
+                            28
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Y5Qo9",
+                              "name": "lbl",
+                              "fill": "$nb-white",
+                              "content": "Become a Kitchen Partner",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "icon",
+                              "id": "Sse30",
+                              "name": "arr",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "arrow-right",
+                              "library": "lucide",
+                              "fill": "$nb-white"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "xNoMY",
+                          "name": "btn-secondary",
+                          "fill": "$nb-white",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "effect": {
+                            "type": "shadow",
+                            "shadowType": "outer",
+                            "color": "#16161614",
+                            "offset": {
+                              "x": 0,
+                              "y": 6
+                            },
+                            "blur": 16
+                          },
+                          "gap": 8,
+                          "padding": [
+                            16,
+                            24
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Bo2vy",
+                              "name": "lbl",
+                              "fill": "$nb-ink",
+                              "content": "See the Pathway",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 16,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "p7r9C",
+                      "name": "microtrust",
+                      "fill": "$nb-muted",
+                      "content": "Free to join · no upfront fees · verified caterers go live first",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LWZ7Q",
+                  "name": "SocialProof",
+                  "gap": 14,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "YeR7u",
+                      "name": "Stack",
+                      "width": 118,
+                      "height": 40,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "V5brT",
+                          "x": 0,
+                          "y": 0,
+                          "name": "av0",
+                          "fill": "$nb-purple",
+                          "width": 40,
+                          "height": 40,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "KkO9Z",
+                          "x": 26,
+                          "y": 0,
+                          "name": "av1",
+                          "fill": "$nb-pink",
+                          "width": 40,
+                          "height": 40,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "f6CW3",
+                          "x": 52,
+                          "y": 0,
+                          "name": "av2",
+                          "fill": "$nb-lime",
+                          "width": 40,
+                          "height": 40,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2
+                        },
+                        {
+                          "type": "ellipse",
+                          "id": "qot3T",
+                          "x": 78,
+                          "y": 0,
+                          "name": "av3",
+                          "fill": "$nb-sky",
+                          "width": 40,
+                          "height": 40,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "obXkR",
+                      "name": "pt",
+                      "fill": "$nb-ink",
+                      "content": "120+ cooks already on the waitlist",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IVneG",
+              "name": "HeroArt",
+              "width": "fill_container",
+              "height": 560,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "q2qzHq",
+                  "x": 34,
+                  "y": 8,
+                  "name": "blobPink",
+                  "geometry": "M44 18c52-20 108-10 134 34 26 44 18 104-22 130-40 26-104 20-132-22-28-42-32-118 20-142z",
+                  "viewBox": [
+                    0,
+                    0,
+                    200,
+                    200
+                  ],
+                  "fill": "$nb-pink",
+                  "width": 170,
+                  "height": 160,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "path",
+                  "id": "BTDBG",
+                  "x": 30,
+                  "y": 330,
+                  "name": "blobLime",
+                  "geometry": "M44 18c52-20 108-10 134 34 26 44 18 104-22 130-40 26-104 20-132-22-28-42-32-118 20-142z",
+                  "viewBox": [
+                    0,
+                    0,
+                    200,
+                    200
+                  ],
+                  "fill": "$nb-lime",
+                  "width": 250,
+                  "height": 230,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "path",
+                  "id": "W16cZF",
+                  "x": 430,
+                  "y": 350,
+                  "name": "blobSky",
+                  "geometry": "M44 18c52-20 108-10 134 34 26 44 18 104-22 130-40 26-104 20-132-22-28-42-32-118 20-142z",
+                  "viewBox": [
+                    0,
+                    0,
+                    200,
+                    200
+                  ],
+                  "fill": "$nb-sky",
+                  "width": 210,
+                  "height": 200,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2
+                },
+                {
+                  "id": "c1Nu0",
+                  "type": "ref",
+                  "ref": "egFn2",
+                  "name": "sp1",
+                  "layoutPosition": "absolute",
+                  "x": 528,
+                  "y": 44,
+                  "width": 34,
+                  "height": 34,
+                  "fill": "$nb-pink"
+                },
+                {
+                  "id": "XZWa7",
+                  "type": "ref",
+                  "ref": "egFn2",
+                  "name": "sp2",
+                  "layoutPosition": "absolute",
+                  "x": 40,
+                  "y": 232,
+                  "width": 28,
+                  "height": 28,
+                  "fill": "$nb-sky"
+                },
+                {
+                  "id": "HyApi",
+                  "type": "ref",
+                  "ref": "egFn2",
+                  "name": "sp3",
+                  "layoutPosition": "absolute",
+                  "x": 556,
+                  "y": 392,
+                  "width": 26,
+                  "height": 26,
+                  "fill": "$nb-lime"
+                },
+                {
+                  "id": "qa4GA",
+                  "type": "ref",
+                  "ref": "vUurB",
+                  "name": "ar1",
+                  "layoutPosition": "absolute",
+                  "x": 86,
+                  "y": 44,
+                  "width": 80,
+                  "height": 56,
+                  "rotation": -24.000000000000004
+                },
+                {
+                  "id": "IZnWa",
+                  "type": "ref",
+                  "ref": "iJRrG",
+                  "name": "ht1",
+                  "layoutPosition": "absolute",
+                  "x": 516,
+                  "y": 486,
+                  "width": 30,
+                  "height": 28
+                },
+                {
+                  "id": "f5PGdx",
+                  "type": "ref",
+                  "ref": "egFn2",
+                  "name": "sp4",
+                  "layoutPosition": "absolute",
+                  "x": 78,
+                  "y": 430,
+                  "width": 24,
+                  "height": 24,
+                  "fill": "$nb-coral"
+                },
+                {
+                  "id": "y6MME7",
+                  "type": "ref",
+                  "ref": "egFn2",
+                  "name": "sp5",
+                  "layoutPosition": "absolute",
+                  "x": 476,
+                  "y": 36,
+                  "width": 20,
+                  "height": 20,
+                  "fill": "$nb-purple"
+                },
+                {
+                  "type": "frame",
+                  "id": "u4EpR",
+                  "layoutPosition": "absolute",
+                  "x": 36,
+                  "y": 404,
+                  "name": "StickerBadge",
+                  "rotation": 7,
+                  "fill": "$nb-coral",
+                  "cornerRadius": 22,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2.5,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#1414142E",
+                    "offset": {
+                      "x": 3,
+                      "y": 5
+                    },
+                    "blur": 14
+                  },
+                  "gap": 6,
+                  "padding": [
+                    8,
+                    14
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Dbrs1",
+                      "name": "BadgeText",
+                      "fill": "$nb-ink",
+                      "content": "1-tap accept",
+                      "fontFamily": "$nb-display",
+                      "fontSize": 15,
+                      "fontWeight": "800"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "V1vEEZ",
+                  "layoutPosition": "absolute",
+                  "x": 96,
+                  "y": 66,
+                  "name": "OrderFeed",
+                  "rotation": -2,
+                  "width": 452,
+                  "fill": "$nb-white",
+                  "cornerRadius": 22,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2.5,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#1414141F",
+                    "offset": {
+                      "x": 6,
+                      "y": 12
+                    },
+                    "blur": 30
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 18,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "J239V",
+                      "name": "fhead",
+                      "width": "fill_container",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "ellipse",
+                          "id": "F0VhCr",
+                          "name": "dot",
+                          "fill": "$nb-lime",
+                          "width": 10,
+                          "height": 10,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 1.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "Xxaah",
+                          "name": "ft",
+                          "fill": "$nb-ink",
+                          "content": "Your order feed",
+                          "fontFamily": "$nb-display",
+                          "fontSize": 16,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "k3bdB",
+                          "name": "sp",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "G0r3d",
+                          "name": "loc",
+                          "fill": "$nb-muted",
+                          "content": "Hamburg",
+                          "fontFamily": "$nb-body",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KhqRv",
+                      "name": "order",
+                      "width": "fill_container",
+                      "fill": "$nb-bg",
+                      "cornerRadius": 14,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "gap": 10,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Y5SSij",
+                          "name": "c",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "x0eCa3",
+                              "name": "ot",
+                              "fill": "$nb-ink",
+                              "content": "Team lunch · 25 pax",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "iz14D",
+                              "name": "om",
+                              "fill": "$nb-muted",
+                              "content": "Fri 12:30 · €420",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "I3ljhW",
+                          "name": "sp",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "ZOP3h",
+                          "name": "pill",
+                          "fill": "$nb-purple",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "gap": 5,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dg27w",
+                              "name": "pl",
+                              "fill": "$nb-white",
+                              "content": "Accept",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 13,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HdozJ",
+                      "name": "order",
+                      "width": "fill_container",
+                      "fill": "$nb-bg",
+                      "cornerRadius": 14,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "gap": 10,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "dav4N",
+                          "name": "c",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "Z3Llj",
+                              "name": "ot",
+                              "fill": "$nb-ink",
+                              "content": "Vegan offsite · 40 pax",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "tZM8I",
+                              "name": "om",
+                              "fill": "$nb-muted",
+                              "content": "Tue 11:00 · €690",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "QqdZR",
+                          "name": "sp",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "oPq3r",
+                          "name": "pill",
+                          "fill": "$nb-purple",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "gap": 5,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "nMcAC",
+                              "name": "pl",
+                              "fill": "$nb-white",
+                              "content": "Accept",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 13,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "D4Ing",
+                      "name": "order",
+                      "width": "fill_container",
+                      "fill": "$nb-bg",
+                      "cornerRadius": 14,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "gap": 10,
+                      "padding": [
+                        12,
+                        14
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "hgpfR",
+                          "name": "c",
+                          "layout": "vertical",
+                          "gap": 3,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "feE49",
+                              "name": "ot",
+                              "fill": "$nb-ink",
+                              "content": "Workshop snacks · 15 pax",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            },
+                            {
+                              "type": "text",
+                              "id": "KowO0",
+                              "name": "om",
+                              "fill": "$nb-muted",
+                              "content": "Wed 09:30 · €180",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 13,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "S443QM",
+                          "name": "sp",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "EVMZ6",
+                          "name": "pill",
+                          "fill": "$nb-lime",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "gap": 5,
+                          "padding": [
+                            8,
+                            14
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "U6ivXp",
+                              "name": "ck",
+                              "width": 14,
+                              "height": 14,
+                              "icon": "check",
+                              "library": "lucide",
+                              "fill": "$nb-ink"
+                            },
+                            {
+                              "type": "text",
+                              "id": "XUazK",
+                              "name": "pl",
+                              "fill": "$nb-ink",
+                              "content": "Accepted",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 13,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tuA1e",
+          "name": "StatsBand",
+          "width": "fill_container",
+          "fill": "$nb-bg",
+          "layout": "vertical",
+          "padding": [
+            64,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "h6y4fc",
+              "name": "StatsRow",
+              "width": "fill_container",
+              "gap": 22,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ukJIQ",
+                  "name": "EarningsCard",
+                  "rotation": -0.5,
+                  "width": 1040,
+                  "fill": "$nb-white",
+                  "cornerRadius": 20,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2.5,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "gap": 44,
+                  "padding": 36,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "mc5Vu",
+                      "name": "left",
+                      "width": 520,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aYwm6",
+                          "name": "eb",
+                          "fill": "$nb-purple",
+                          "content": "WHAT YOU COULD EARN",
+                          "fontFamily": "$nb-body",
+                          "fontSize": 13,
+                          "fontWeight": "700",
+                          "letterSpacing": 1.2
+                        },
+                        {
+                          "type": "text",
+                          "id": "grSDa",
+                          "name": "big",
+                          "fill": "$nb-ink",
+                          "content": "€1,500–3,000",
+                          "fontFamily": "$nb-display",
+                          "fontSize": 48,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hpX2S",
+                          "name": "sub",
+                          "fill": "$nb-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "per month from your own kitchen",
+                          "fontFamily": "$nb-body",
+                          "fontSize": 16,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "text",
+                          "id": "MCTHW",
+                          "name": "note",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Based on Hamburg averages, after our flat 12% fee — you keep the rest.",
+                          "lineHeight": 1.4,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TDuZ5",
+                      "name": "right",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WXdOu",
+                          "name": "rl",
+                          "fill": "$nb-ink",
+                          "content": "Orders per week",
+                          "fontFamily": "$nb-body",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "H6xVy",
+                          "name": "chips",
+                          "gap": 10,
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "VfV9Z",
+                              "name": "chip",
+                              "fill": "$nb-white",
+                              "cornerRadius": 9999,
+                              "stroke": "$nb-ink",
+                              "strokeWidth": 2,
+                              "padding": [
+                                10,
+                                18
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "M3bNgA",
+                                  "name": "cl",
+                                  "fill": "$nb-ink",
+                                  "content": "8 / wk",
+                                  "fontFamily": "$nb-body",
+                                  "fontSize": 14,
+                                  "fontWeight": "700"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "EckY3",
+                              "name": "chip",
+                              "fill": "$nb-lime",
+                              "cornerRadius": 9999,
+                              "stroke": "$nb-ink",
+                              "strokeWidth": 2,
+                              "padding": [
+                                10,
+                                18
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "wMmFK",
+                                  "name": "cl",
+                                  "fill": "$nb-ink",
+                                  "content": "12 / wk",
+                                  "fontFamily": "$nb-body",
+                                  "fontSize": 14,
+                                  "fontWeight": "700"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "pL0Lc",
+                              "name": "chip",
+                              "fill": "$nb-white",
+                              "cornerRadius": 9999,
+                              "stroke": "$nb-ink",
+                              "strokeWidth": 2,
+                              "padding": [
+                                10,
+                                18
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Y7qcOr",
+                                  "name": "cl",
+                                  "fill": "$nb-ink",
+                                  "content": "15 / wk",
+                                  "fontFamily": "$nb-body",
+                                  "fontSize": 14,
+                                  "fontWeight": "700"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "PosQ9",
+                          "name": "avg",
+                          "fill": "$nb-muted",
+                          "content": "≈ €240 average per order",
+                          "fontFamily": "$nb-body",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "PCPMN",
+              "type": "ref",
+              "ref": "egFn2",
+              "name": "ssp",
+              "layoutPosition": "absolute",
+              "x": 40,
+              "y": 30,
+              "width": 26,
+              "height": 26,
+              "fill": "$nb-pink"
+            },
+            {
+              "id": "cRwfH",
+              "type": "ref",
+              "ref": "L3MsX",
+              "name": "ssq",
+              "layoutPosition": "absolute",
+              "x": 1300,
+              "y": 40,
+              "width": 80,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oUTs8",
+          "name": "HowSection",
+          "width": "fill_container",
+          "fill": "$nb-bg2",
+          "layout": "vertical",
+          "gap": 44,
+          "padding": [
+            84,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "sCzPV",
+              "name": "HowHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "padding": [
+                0,
+                280
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "rvkCl",
+                  "name": "eb",
+                  "fill": "$nb-purple",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "HOW IT WORKS",
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "K9BLA",
+                  "name": "hd",
+                  "fill": "$nb-ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Apply once. Get matched. Cook.",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-display",
+                  "fontSize": 42,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "VaDf1",
+                  "name": "sb",
+                  "fill": "$nb-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "From sign-up to your first paid order — without acquisition or cold calls.",
+                  "lineHeight": 1.55,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "sLpqb",
+              "name": "StepsRow",
+              "width": "fill_container",
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Me4B5",
+                  "name": "step-1",
+                  "rotation": -1.5000000000000002,
+                  "width": 380,
+                  "fill": "$nb-white",
+                  "cornerRadius": 18,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 30,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "W5OZU",
+                      "name": "nc",
+                      "width": 58,
+                      "height": 58,
+                      "fill": "$nb-purple",
+                      "cornerRadius": 9999,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "C8jye3",
+                          "name": "n",
+                          "fill": "$nb-ink",
+                          "content": "1",
+                          "fontFamily": "$nb-display",
+                          "fontSize": 26,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "T6XL1q",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Apply & get verified",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$nb-display",
+                      "fontSize": 21,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "h8NIRS",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Pass our lightweight Verified Gate — identity, business, hygiene. Quick, not a heavy audit.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "id": "eU4Li",
+                  "type": "ref",
+                  "ref": "vUurB",
+                  "name": "sa-1",
+                  "width": 58,
+                  "height": 40,
+                  "rotation": -3.0000000000000004,
+                  "fill": "#00000000"
+                },
+                {
+                  "type": "frame",
+                  "id": "JPUQ8",
+                  "name": "step-2",
+                  "rotation": 1.5000000000000002,
+                  "width": 380,
+                  "fill": "$nb-white",
+                  "cornerRadius": 18,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 30,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "aTOlh",
+                      "name": "nc",
+                      "width": 58,
+                      "height": 58,
+                      "fill": "$nb-pink",
+                      "cornerRadius": 9999,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SzNu3",
+                          "name": "n",
+                          "fill": "$nb-ink",
+                          "content": "2",
+                          "fontFamily": "$nb-display",
+                          "fontSize": 26,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "BilP0",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Matching orders appear",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$nb-display",
+                      "fontSize": 21,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "b1f2rE",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Requests that fit your capacity, region and lead time land in your feed automatically.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "id": "pEq9q",
+                  "type": "ref",
+                  "ref": "vUurB",
+                  "name": "sa-2",
+                  "width": 58,
+                  "height": 40,
+                  "rotation": 4,
+                  "fill": "#00000000"
+                },
+                {
+                  "type": "frame",
+                  "id": "EwkcT",
+                  "name": "step-3",
+                  "rotation": -1,
+                  "width": 380,
+                  "fill": "$nb-white",
+                  "cornerRadius": 18,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 30,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "O4MWD",
+                      "name": "nc",
+                      "width": 58,
+                      "height": 58,
+                      "fill": "$nb-lime",
+                      "cornerRadius": 9999,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kcpHh",
+                          "name": "n",
+                          "fill": "$nb-ink",
+                          "content": "3",
+                          "fontFamily": "$nb-display",
+                          "fontSize": 26,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "hdYEz",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Accept in one click",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$nb-display",
+                      "fontSize": 21,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QSWhC",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "First to accept gets the order at a fixed price. Cook, deliver, get paid — no haggling.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "kVHLi",
+              "type": "ref",
+              "ref": "egFn2",
+              "name": "hsp",
+              "layoutPosition": "absolute",
+              "x": 60,
+              "y": 120,
+              "width": 26,
+              "height": 26,
+              "fill": "$nb-coral"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "NIkFR",
+          "name": "WhySection",
+          "width": "fill_container",
+          "fill": "$nb-bg",
+          "layout": "vertical",
+          "gap": 44,
+          "padding": [
+            84,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "HEcjH",
+              "name": "WhyHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "padding": [
+                0,
+                300
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XwWY0",
+                  "name": "eb",
+                  "fill": "$nb-pink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "WHY COOK WITH CATERISTS",
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "urTab",
+                  "name": "hd",
+                  "fill": "$nb-ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Planned demand, not cold calls.",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-display",
+                  "fontSize": 42,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "k1VbF",
+                  "name": "sb",
+                  "fill": "$nb-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Stop chasing gigs through word of mouth. One verified network sends matching orders straight to you.",
+                  "lineHeight": 1.55,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "g5YAD",
+              "name": "CompareRow",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "J8Vzle",
+                  "name": "col-Ohne",
+                  "rotation": -1,
+                  "width": 628,
+                  "fill": "$nb-white",
+                  "cornerRadius": 18,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 34,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "wk0Tu",
+                      "name": "Title",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "b0yep",
+                          "name": "ti",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "phone-off",
+                          "library": "lucide",
+                          "fill": "$nb-coral"
+                        },
+                        {
+                          "type": "text",
+                          "id": "UY7fG",
+                          "name": "tt",
+                          "fill": "$nb-ink",
+                          "content": "Without Caterists",
+                          "fontFamily": "$nb-display",
+                          "fontSize": 23,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uGgLb",
+                      "name": "it",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "QHlTU",
+                          "name": "ii",
+                          "width": 21,
+                          "height": 21,
+                          "icon": "x",
+                          "library": "lucide",
+                          "fill": "$nb-coral"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Upst2",
+                          "name": "t",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Word of mouth and Google listings for leads",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mY891",
+                      "name": "it",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "X4S0y2",
+                          "name": "ii",
+                          "width": 21,
+                          "height": 21,
+                          "icon": "x",
+                          "library": "lucide",
+                          "fill": "$nb-coral"
+                        },
+                        {
+                          "type": "text",
+                          "id": "g3nGrD",
+                          "name": "t",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Uncoordinated calls that rarely fit your capacity",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MHVOb",
+                      "name": "it",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "fp62Y",
+                          "name": "ii",
+                          "width": 21,
+                          "height": 21,
+                          "icon": "x",
+                          "library": "lucide",
+                          "fill": "$nb-coral"
+                        },
+                        {
+                          "type": "text",
+                          "id": "yaMd8",
+                          "name": "t",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "No reliable, plannable demand pipeline",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "q8igFN",
+                      "name": "it",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "Pv8rV",
+                          "name": "ii",
+                          "width": 21,
+                          "height": 21,
+                          "icon": "x",
+                          "library": "lucide",
+                          "fill": "$nb-coral"
+                        },
+                        {
+                          "type": "text",
+                          "id": "b9sSQe",
+                          "name": "t",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "You chase payment and chase the next gig",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "r2b7Z",
+                  "name": "col-Mit",
+                  "rotation": 1,
+                  "width": 628,
+                  "fill": "$nb-purple",
+                  "cornerRadius": 18,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": 34,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "NbZQ9",
+                      "name": "Title",
+                      "gap": 10,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "gx9xH",
+                          "name": "ti",
+                          "width": 24,
+                          "height": 24,
+                          "icon": "chef-hat",
+                          "library": "lucide",
+                          "fill": "$nb-lime"
+                        },
+                        {
+                          "type": "text",
+                          "id": "OGFyQ",
+                          "name": "tt",
+                          "fill": "$nb-white",
+                          "content": "With Caterists",
+                          "fontFamily": "$nb-display",
+                          "fontSize": 23,
+                          "fontWeight": "800"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HYDC0",
+                      "name": "it",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "P3XrW",
+                          "name": "ii",
+                          "width": 21,
+                          "height": 21,
+                          "icon": "check",
+                          "library": "lucide",
+                          "fill": "$nb-lime"
+                        },
+                        {
+                          "type": "text",
+                          "id": "b7kkK",
+                          "name": "t",
+                          "fill": "#EDE7FB",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Matching orders delivered to you automatically",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "txJ9p",
+                      "name": "it",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "PDJKG",
+                          "name": "ii",
+                          "width": 21,
+                          "height": 21,
+                          "icon": "check",
+                          "library": "lucide",
+                          "fill": "$nb-lime"
+                        },
+                        {
+                          "type": "text",
+                          "id": "nRUQk",
+                          "name": "t",
+                          "fill": "#EDE7FB",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Accept only what fits — capacity, region, lead time",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "j3yidF",
+                      "name": "it",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "ZmTRv",
+                          "name": "ii",
+                          "width": 21,
+                          "height": 21,
+                          "icon": "check",
+                          "library": "lucide",
+                          "fill": "$nb-lime"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Lfonb",
+                          "name": "t",
+                          "fill": "#EDE7FB",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Fixed price up front — no bidding, no haggling",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N94Eqn",
+                      "name": "it",
+                      "width": "fill_container",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "QEy7w",
+                          "name": "ii",
+                          "width": 21,
+                          "height": 21,
+                          "icon": "check",
+                          "library": "lucide",
+                          "fill": "$nb-lime"
+                        },
+                        {
+                          "type": "text",
+                          "id": "khLv8",
+                          "name": "t",
+                          "fill": "#EDE7FB",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Fair 12% — grow with optional Pro tools",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 16,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ClvKB",
+          "name": "PathwaySection",
+          "width": "fill_container",
+          "fill": "$nb-bg",
+          "layout": "vertical",
+          "gap": 44,
+          "padding": [
+            84,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "RYD3G",
+              "name": "PathHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "padding": [
+                0,
+                260
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MFnlY",
+                  "name": "eb",
+                  "fill": "$nb-purple",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "THE PATHWAY PROGRAM",
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "ZDSu4",
+                  "name": "hd",
+                  "fill": "$nb-ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Where are you on the path?",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-display",
+                  "fontSize": 42,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "D5meE",
+                  "name": "sb",
+                  "fill": "$nb-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Start today if you have a registered business. If you cook from home, the Pathway gets you there — step by step, fully legal.",
+                  "lineHeight": 1.55,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Dx7tT",
+              "name": "StagesRow",
+              "width": "fill_container",
+              "gap": 20,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rhdJd",
+                  "name": "stage-1",
+                  "rotation": -1.5000000000000002,
+                  "width": 380,
+                  "fill": "$nb-white",
+                  "cornerRadius": 18,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 30,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LhcVz",
+                      "name": "top",
+                      "width": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "xsG7R",
+                          "name": "nc",
+                          "width": 58,
+                          "height": 58,
+                          "fill": "$nb-lime",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ilKvJ",
+                              "name": "n",
+                              "fill": "$nb-ink",
+                              "content": "1",
+                              "fontFamily": "$nb-display",
+                              "fontSize": 26,
+                              "fontWeight": "800"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Rk1Rp",
+                          "name": "sp",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "pZymd",
+                          "name": "badge",
+                          "fill": "$nb-lime",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "uwIaD",
+                              "name": "bl",
+                              "fill": "$nb-ink",
+                              "content": "Live now",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "vWMli",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Verified Micro-Caterer",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$nb-display",
+                      "fontSize": 21,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AA3uT",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "You have a registered business and your own professional kitchen. Pass the Verified Gate and start accepting orders today.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "KCfOI",
+                  "name": "stage-2",
+                  "rotation": 1.5000000000000002,
+                  "width": 380,
+                  "fill": "$nb-white",
+                  "cornerRadius": 18,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 30,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Hks00",
+                      "name": "top",
+                      "width": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "TauSa",
+                          "name": "nc",
+                          "width": 58,
+                          "height": 58,
+                          "fill": "$nb-sky",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "k5X9j",
+                              "name": "n",
+                              "fill": "$nb-ink",
+                              "content": "2",
+                              "fontFamily": "$nb-display",
+                              "fontSize": 26,
+                              "fontWeight": "800"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "yTN8P",
+                          "name": "sp",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zj3Kl",
+                          "name": "badge",
+                          "fill": "$nb-sky",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "teBk3",
+                              "name": "bl",
+                              "fill": "$nb-ink",
+                              "content": "Coming soon",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "BBoz4",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Home-Pro",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$nb-display",
+                      "fontSize": 21,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "C3l1Q",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Home cook with business registration, IfSG §43 hygiene, allergen training and booked hours in a partner pro-kitchen or cloud kitchen.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "etXe0",
+                  "name": "stage-3",
+                  "rotation": -1,
+                  "width": 380,
+                  "fill": "$nb-white",
+                  "cornerRadius": 18,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 30,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qAVjh",
+                      "name": "top",
+                      "width": "fill_container",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "g6L07",
+                          "name": "nc",
+                          "width": 58,
+                          "height": 58,
+                          "fill": "$nb-coral",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "VNurw",
+                              "name": "n",
+                              "fill": "$nb-ink",
+                              "content": "3",
+                              "fontFamily": "$nb-display",
+                              "fontSize": 26,
+                              "fontWeight": "800"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "wlp5b",
+                          "name": "sp",
+                          "width": "fill_container",
+                          "height": 1
+                        },
+                        {
+                          "type": "frame",
+                          "id": "eXhVa",
+                          "name": "badge",
+                          "fill": "$nb-bg2",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "fHW2r",
+                              "name": "bl",
+                              "fill": "$nb-ink",
+                              "content": "Roadmap",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 12,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Mf0cQ",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Resident-Heim",
+                      "lineHeight": 1.15,
+                      "fontFamily": "$nb-display",
+                      "fontSize": 21,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wyUDC",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Fully regulated home-based cooking, where food law allows. Our long-term vision.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I9z3R",
+              "name": "PathCTAs",
+              "width": "fill_container",
+              "gap": 14,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bRlKW",
+                  "name": "cta-primary",
+                  "fill": "$nb-purple",
+                  "cornerRadius": 9999,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161620",
+                    "offset": {
+                      "x": 0,
+                      "y": 6
+                    },
+                    "blur": 16
+                  },
+                  "gap": 8,
+                  "padding": [
+                    15,
+                    26
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ZldVU",
+                      "name": "lbl",
+                      "fill": "$nb-white",
+                      "content": "Join as a verified caterer",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "icon",
+                      "id": "d3zll",
+                      "name": "arr",
+                      "width": 18,
+                      "height": 18,
+                      "icon": "arrow-right",
+                      "library": "lucide",
+                      "fill": "$nb-white"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "t7bCal",
+                  "name": "cta-secondary",
+                  "fill": "$nb-white",
+                  "cornerRadius": 9999,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161614",
+                    "offset": {
+                      "x": 0,
+                      "y": 6
+                    },
+                    "blur": 16
+                  },
+                  "gap": 8,
+                  "padding": [
+                    15,
+                    26
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "J8fWsl",
+                      "name": "lbl",
+                      "fill": "$nb-ink",
+                      "content": "Register Pathway interest",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 16,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "YxDIK",
+              "type": "ref",
+              "ref": "egFn2",
+              "name": "psp",
+              "layoutPosition": "absolute",
+              "x": 1330,
+              "y": 90,
+              "width": 26,
+              "height": 26,
+              "fill": "$nb-pink"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "e9tR7",
+          "name": "TrustSection",
+          "width": "fill_container",
+          "fill": "$nb-bg2",
+          "layout": "vertical",
+          "gap": 44,
+          "padding": [
+            84,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "ADJFm",
+              "name": "TrustHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "padding": [
+                0,
+                290
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "twsyg",
+                  "name": "eb",
+                  "fill": "$nb-coral",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "VERIFIED GATE",
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "TucQt",
+                  "name": "hd",
+                  "fill": "$nb-ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "What you bring to join.",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-display",
+                  "fontSize": 42,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "KYyH0",
+                  "name": "sb",
+                  "fill": "$nb-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Lightweight, not a heavy audit — clear the Verified Gate once and start accepting orders. A private kitchen without a registered business can't sell yet — that's what the Pathway is for.",
+                  "lineHeight": 1.55,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "l4Tug",
+              "name": "GateRow",
+              "width": "fill_container",
+              "gap": 18,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "udoCB",
+                  "name": "gate-Identität",
+                  "rotation": -2,
+                  "width": 232,
+                  "fill": "$nb-white",
+                  "cornerRadius": 16,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 13,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "zQluR",
+                      "name": "ib",
+                      "width": 46,
+                      "height": 46,
+                      "fill": "$nb-purple",
+                      "cornerRadius": 9999,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "fUFif",
+                          "name": "i",
+                          "width": 22,
+                          "height": 22,
+                          "icon": "id-card",
+                          "library": "lucide",
+                          "fill": "$nb-ink"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "SgbCw",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Identity",
+                      "fontFamily": "$nb-display",
+                      "fontSize": 18,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MccMD",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "ID check for every person behind the kitchen.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "v6x3sO",
+                  "name": "gate-Gewerbe",
+                  "rotation": 1,
+                  "width": 232,
+                  "fill": "$nb-white",
+                  "cornerRadius": 16,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 13,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "c46G9g",
+                      "name": "ib",
+                      "width": 46,
+                      "height": 46,
+                      "fill": "$nb-pink",
+                      "cornerRadius": 9999,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "kSLkk",
+                          "name": "i",
+                          "width": 22,
+                          "height": 22,
+                          "icon": "briefcase-business",
+                          "library": "lucide",
+                          "fill": "$nb-ink"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "FI6OP",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Business",
+                      "fontFamily": "$nb-display",
+                      "fontSize": 18,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YJRQM",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Registered business (Gewerbe) and valid tax ID.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AoutS",
+                  "name": "gate-Hygiene",
+                  "rotation": -1,
+                  "width": 232,
+                  "fill": "$nb-white",
+                  "cornerRadius": 16,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 13,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "g6XSn",
+                      "name": "ib",
+                      "width": 46,
+                      "height": 46,
+                      "fill": "$nb-lime",
+                      "cornerRadius": 9999,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "vicRk",
+                          "name": "i",
+                          "width": 22,
+                          "height": 22,
+                          "icon": "shield-check",
+                          "library": "lucide",
+                          "fill": "$nb-ink"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "PuHaf",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Hygiene",
+                      "fontFamily": "$nb-display",
+                      "fontSize": 18,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "REi0y",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "IfSG §43 food-safety certification.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "z39fQY",
+                  "name": "gate-Allergene",
+                  "rotation": 2,
+                  "width": 232,
+                  "fill": "$nb-white",
+                  "cornerRadius": 16,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 13,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "X5a3R",
+                      "name": "ib",
+                      "width": 46,
+                      "height": 46,
+                      "fill": "$nb-sky",
+                      "cornerRadius": 9999,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "ZX5Zs",
+                          "name": "i",
+                          "width": 22,
+                          "height": 22,
+                          "icon": "wheat-off",
+                          "library": "lucide",
+                          "fill": "$nb-ink"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "HyHCE",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Allergens",
+                      "fontFamily": "$nb-display",
+                      "fontSize": 18,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Jjqfi",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Allergen competence and full ingredient declaration.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iMt6w",
+                  "name": "gate-Haftpflicht",
+                  "rotation": -2,
+                  "width": 232,
+                  "fill": "$nb-white",
+                  "cornerRadius": 16,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  },
+                  "layout": "vertical",
+                  "gap": 13,
+                  "padding": 22,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "v0y7RA",
+                      "name": "ib",
+                      "width": 46,
+                      "height": 46,
+                      "fill": "$nb-coral",
+                      "cornerRadius": 9999,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon",
+                          "id": "UoNeK",
+                          "name": "i",
+                          "width": 22,
+                          "height": 22,
+                          "icon": "umbrella",
+                          "library": "lucide",
+                          "fill": "$nb-ink"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "UbEou",
+                      "name": "t",
+                      "fill": "$nb-ink",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Liability",
+                      "fontFamily": "$nb-display",
+                      "fontSize": 18,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "h7Rec",
+                      "name": "d",
+                      "fill": "$nb-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Confirmed business liability insurance.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 13.5,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "M0eJ1",
+          "name": "QualitySection",
+          "width": "fill_container",
+          "fill": "$nb-bg",
+          "gap": 56,
+          "padding": [
+            88,
+            72
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Aj5Wr",
+              "name": "QualLeft",
+              "width": 540,
+              "layout": "vertical",
+              "gap": 22,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "a9PeTH",
+                  "name": "eb",
+                  "fill": "$nb-purple",
+                  "content": "KEEP DOING WHAT YOU LOVE",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "enFOd",
+                  "name": "hd",
+                  "fill": "$nb-ink",
+                  "textGrowth": "fixed-width",
+                  "width": 540,
+                  "content": "You cook. We bring the orders.",
+                  "lineHeight": 1.1,
+                  "fontFamily": "$nb-display",
+                  "fontSize": 40,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "DiCJR",
+                  "name": "bd",
+                  "fill": "$nb-muted",
+                  "textGrowth": "fixed-width",
+                  "width": 520,
+                  "content": "No marketing, no acquisition, no admin chase. Cook what you're great at from your certified kitchen — we handle demand, matching and payment.",
+                  "lineHeight": 1.55,
+                  "fontFamily": "$nb-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                },
+                {
+                  "id": "DrXlO",
+                  "type": "ref",
+                  "ref": "CQ1EC",
+                  "name": "qBtn",
+                  "descendants": {
+                    "anJAE": {
+                      "content": "Learn more"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "k3bXx",
+              "name": "QualArt",
+              "width": "fill_container",
+              "height": 440,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "Y87Ej",
+                  "x": 30,
+                  "y": 60,
+                  "name": "qblob",
+                  "geometry": "M44 18c52-20 108-10 134 34 26 44 18 104-22 130-40 26-104 20-132-22-28-42-32-118 20-142z",
+                  "viewBox": [
+                    0,
+                    0,
+                    200,
+                    200
+                  ],
+                  "fill": "$nb-lime",
+                  "width": 280,
+                  "height": 260,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 18,
+                  "id": "S4oVdi",
+                  "x": 20,
+                  "y": 40,
+                  "name": "qp1",
+                  "rotation": -3.0000000000000004,
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "createasea",
+                    "link": "https://unsplash.com/@createasea",
+                    "author": "Createasea"
+                  },
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1744421459678-9c74f10ba85b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTk3NzF8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "width": 320,
+                  "height": 320,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2.5,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  }
+                },
+                {
+                  "type": "rectangle",
+                  "cornerRadius": 18,
+                  "id": "em8uV",
+                  "x": 300,
+                  "y": 120,
+                  "name": "qp2",
+                  "rotation": 4,
+                  "metadata": {
+                    "type": "unsplash",
+                    "username": "alanalves",
+                    "link": "https://unsplash.com/@alanalves",
+                    "author": "Alan Alves"
+                  },
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1736195918270-b0660a8da34e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NTk3NzJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "width": 280,
+                  "height": 280,
+                  "stroke": "$nb-ink",
+                  "strokeWidth": 2.5,
+                  "effect": {
+                    "type": "shadow",
+                    "shadowType": "outer",
+                    "color": "#16161618",
+                    "offset": {
+                      "x": 0,
+                      "y": 10
+                    },
+                    "blur": 26
+                  }
+                },
+                {
+                  "id": "iC34c",
+                  "type": "ref",
+                  "ref": "egFn2",
+                  "name": "qs1",
+                  "layoutPosition": "absolute",
+                  "x": 560,
+                  "y": 50,
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$nb-pink"
+                },
+                {
+                  "id": "J3qkT",
+                  "type": "ref",
+                  "ref": "iJRrG",
+                  "name": "qh1",
+                  "layoutPosition": "absolute",
+                  "x": 10,
+                  "y": 360,
+                  "width": 26,
+                  "height": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S4pRGj",
+          "name": "Testimonials",
+          "width": "fill_container",
+          "fill": "$nb-bg2",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            84,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "zft6z",
+              "name": "TestiHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "padding": [
+                0,
+                300
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "W81VdN",
+                  "name": "eb",
+                  "fill": "$nb-purple",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "MEET THE COOKS",
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "KIKpg",
+                  "name": "hd",
+                  "fill": "$nb-ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Cooks already earning with Caterists",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-display",
+                  "fontSize": 42,
+                  "fontWeight": "800"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UeInX",
+              "name": "TRow1",
+              "width": "fill_container",
+              "gap": 24,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "id": "A8Xag",
+                  "type": "ref",
+                  "ref": "yDlUM",
+                  "name": "cook-1",
+                  "rotation": -1.5000000000000002,
+                  "descendants": {
+                    "tG6Dj": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1562673529-20acc538820a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NjA1MTl8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "LqAz0": {
+                      "content": "Brigitte M."
+                    },
+                    "Y5EOKI": {
+                      "content": "Home-style & bakes · Altona"
+                    },
+                    "vPnVt": {
+                      "content": "Verified"
+                    },
+                    "XVL4X": {
+                      "icon": "trending-up",
+                      "fill": "$nb-purple"
+                    },
+                    "mZYkb": {
+                      "content": "€2.4k/mo"
+                    }
+                  }
+                },
+                {
+                  "id": "s8XGg",
+                  "type": "ref",
+                  "ref": "yDlUM",
+                  "name": "cook-2",
+                  "rotation": 1,
+                  "descendants": {
+                    "tG6Dj": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1748867391573-d5663f0587a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NjA1MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "LqAz0": {
+                      "content": "Mehmet Y."
+                    },
+                    "Y5EOKI": {
+                      "content": "Anatolian mezze · Wandsbek"
+                    },
+                    "vPnVt": {
+                      "content": "Verified"
+                    },
+                    "XVL4X": {
+                      "icon": "trending-up",
+                      "fill": "$nb-purple"
+                    },
+                    "mZYkb": {
+                      "content": "€3.1k/mo"
+                    }
+                  }
+                },
+                {
+                  "id": "ZUeC9",
+                  "type": "ref",
+                  "ref": "yDlUM",
+                  "name": "cook-3",
+                  "rotation": -1,
+                  "descendants": {
+                    "tG6Dj": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1768729340731-85e386e62529?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NjA1MjB8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      }
+                    },
+                    "LqAz0": {
+                      "content": "Lena S."
+                    },
+                    "Y5EOKI": {
+                      "content": "Vegan bowls · Ottensen"
+                    },
+                    "vPnVt": {
+                      "content": "Verified"
+                    },
+                    "XVL4X": {
+                      "icon": "trending-up",
+                      "fill": "$nb-purple"
+                    },
+                    "mZYkb": {
+                      "content": "€1.8k/mo"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "JqQQ5",
+              "name": "MoreWrap",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                6,
+                0
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "O5agc4",
+                  "type": "ref",
+                  "ref": "CQ1EC",
+                  "name": "MoreBtn",
+                  "descendants": {
+                    "anJAE": {
+                      "content": "Meet more cooks"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "i7Sewj",
+              "type": "ref",
+              "ref": "egFn2",
+              "name": "tsp1",
+              "layoutPosition": "absolute",
+              "x": 80,
+              "y": 120,
+              "width": 28,
+              "height": 28,
+              "fill": "$nb-pink"
+            },
+            {
+              "id": "d0dWz",
+              "type": "ref",
+              "ref": "egFn2",
+              "name": "tsp2",
+              "layoutPosition": "absolute",
+              "x": 1320,
+              "y": 380,
+              "width": 24,
+              "height": 24,
+              "fill": "$nb-lime"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Uz6aM",
+          "name": "FAQSection",
+          "width": "fill_container",
+          "fill": "$nb-bg",
+          "layout": "vertical",
+          "gap": 44,
+          "padding": [
+            84,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "d0YIbC",
+              "name": "FAQHeader",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "padding": [
+                0,
+                280
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kbWMd",
+                  "name": "eb",
+                  "fill": "$nb-coral",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "QUESTIONS, ANSWERED",
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "text",
+                  "id": "r5NGkK",
+                  "name": "hd",
+                  "fill": "$nb-ink",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Cooking for income — the honest FAQ",
+                  "lineHeight": 1.1,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-display",
+                  "fontSize": 42,
+                  "fontWeight": "800"
+                },
+                {
+                  "type": "text",
+                  "id": "y9bHB",
+                  "name": "sb",
+                  "fill": "$nb-muted",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "The legal and practical questions every cook asks before joining.",
+                  "lineHeight": 1.55,
+                  "textAlign": "center",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 18,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hkKRy",
+              "name": "FAQBody",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BsliU",
+                  "name": "row",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "yvJKs",
+                      "name": "faq",
+                      "rotation": -1,
+                      "width": "fill_container",
+                      "fill": "$nb-white",
+                      "cornerRadius": 16,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#16161618",
+                        "offset": {
+                          "x": 0,
+                          "y": 10
+                        },
+                        "blur": 26
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 26,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "xwY97",
+                          "name": "q",
+                          "fill": "$nb-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Do I need a registered business (Gewerbe)?",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$nb-display",
+                          "fontSize": 17,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "wifPU",
+                          "name": "a",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "To accept paid orders today, yes — a Gewerbe and a compliant kitchen. No business yet? Join the Pathway and we help you get there.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lfSCc",
+                      "name": "faq",
+                      "rotation": 1,
+                      "width": "fill_container",
+                      "fill": "$nb-white",
+                      "cornerRadius": 16,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#16161618",
+                        "offset": {
+                          "x": 0,
+                          "y": 10
+                        },
+                        "blur": 26
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 26,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l5c63",
+                          "name": "q",
+                          "fill": "$nb-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "What about hygiene rules?",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$nb-display",
+                          "fontSize": 17,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "p280r",
+                          "name": "a",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "You confirm IfSG §43 food-safety training and a short kitchen self-disclosure as part of the Verified Gate.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PnJTt",
+                      "name": "faq",
+                      "rotation": -1,
+                      "width": "fill_container",
+                      "fill": "$nb-white",
+                      "cornerRadius": 16,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#16161618",
+                        "offset": {
+                          "x": 0,
+                          "y": 10
+                        },
+                        "blur": 26
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 26,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dxO0y",
+                          "name": "q",
+                          "fill": "$nb-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "How and when do I get paid?",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$nb-display",
+                          "fontSize": 17,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ImE2A",
+                          "name": "a",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Fixed price per order, set up front. Caterists invoices the client and pays you out after delivery — no chasing.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "g9EXno",
+                  "name": "row",
+                  "width": "fill_container",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Vdec0",
+                      "name": "faq",
+                      "rotation": 1,
+                      "width": "fill_container",
+                      "fill": "$nb-white",
+                      "cornerRadius": 16,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#16161618",
+                        "offset": {
+                          "x": 0,
+                          "y": 10
+                        },
+                        "blur": 26
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 26,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oHSgA",
+                          "name": "q",
+                          "fill": "$nb-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "What does it cost me?",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$nb-display",
+                          "fontSize": 17,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "PeoV2",
+                          "name": "a",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "€0 to join. We take a flat 12% on confirmed orders. Optional Pro tools later — never pay to get matched.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "XeD6S",
+                      "name": "faq",
+                      "rotation": -1,
+                      "width": "fill_container",
+                      "fill": "$nb-white",
+                      "cornerRadius": 16,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#16161618",
+                        "offset": {
+                          "x": 0,
+                          "y": 10
+                        },
+                        "blur": 26
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 26,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OmAyl",
+                          "name": "q",
+                          "fill": "$nb-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Do I have to take every order?",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$nb-display",
+                          "fontSize": 17,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "O7TVDI",
+                          "name": "a",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "No. Only orders matching your capacity, region and lead time reach you — accept the ones you want.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "I98M4y",
+                      "name": "faq",
+                      "rotation": 1,
+                      "width": "fill_container",
+                      "fill": "$nb-white",
+                      "cornerRadius": 16,
+                      "stroke": "$nb-ink",
+                      "strokeWidth": 2,
+                      "effect": {
+                        "type": "shadow",
+                        "shadowType": "outer",
+                        "color": "#16161618",
+                        "offset": {
+                          "x": 0,
+                          "y": 10
+                        },
+                        "blur": 26
+                      },
+                      "layout": "vertical",
+                      "gap": 10,
+                      "padding": 26,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zcRkV",
+                          "name": "q",
+                          "fill": "$nb-ink",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "I only cook from home. Can I join?",
+                          "lineHeight": 1.2,
+                          "fontFamily": "$nb-display",
+                          "fontSize": 17,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "InpHd",
+                          "name": "a",
+                          "fill": "$nb-muted",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Not as a live caterer yet — but the Pathway (hygiene, business coaching, partner cloud-kitchen hours) is built for exactly that.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$nb-body",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LsIlR",
+          "name": "NewsletterSection",
+          "width": "fill_container",
+          "fill": "$nb-bg",
+          "layout": "vertical",
+          "padding": [
+            60,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "D166qP",
+              "name": "Block",
+              "clip": true,
+              "width": "fill_container",
+              "fill": "$nb-purple",
+              "cornerRadius": 26,
+              "stroke": "$nb-ink",
+              "strokeWidth": 2.5,
+              "effect": {
+                "type": "shadow",
+                "shadowType": "outer",
+                "color": "#16161618",
+                "offset": {
+                  "x": 0,
+                  "y": 10
+                },
+                "blur": 26
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "sY63v",
+                  "name": "Inner",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "padding": [
+                    56,
+                    60
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Ek0hl",
+                      "name": "eb",
+                      "fill": "$nb-lime",
+                      "content": "JOIN THE WAITLIST",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 14,
+                      "fontWeight": "700",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "VdpU9",
+                      "name": "hd",
+                      "fill": "$nb-white",
+                      "textGrowth": "fixed-width",
+                      "width": 895,
+                      "content": "Start earning from your kitchen.",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$nb-display",
+                      "fontSize": 44,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xlvvJ",
+                      "name": "sb",
+                      "fill": "#E7DBFB",
+                      "textGrowth": "fixed-width",
+                      "width": 640,
+                      "content": "Join the cook waitlist — we'll reach out in time for the Hamburg launch with your onboarding track.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 17,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kqPrp",
+                      "name": "Chips",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "FRHyH",
+                          "name": "chip-Büro",
+                          "width": 140,
+                          "fill": "$nb-white",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "layout": "vertical",
+                          "padding": [
+                            9,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "a7F32R",
+                              "name": "l",
+                              "fill": "$nb-ink",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Verified caterer",
+                              "textAlign": "center",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "OhNkg",
+                          "name": "chip-Coworking",
+                          "width": 140,
+                          "fill": "$nb-white",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "layout": "vertical",
+                          "padding": [
+                            9,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "cKZtW",
+                              "name": "l",
+                              "fill": "$nb-ink",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Home cook",
+                              "textAlign": "center",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "pZm9I",
+                          "name": "chip-Event",
+                          "width": 140,
+                          "fill": "$nb-white",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "layout": "vertical",
+                          "padding": [
+                            9,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QkRWf",
+                              "name": "l",
+                              "fill": "$nb-ink",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Side hustle",
+                              "textAlign": "center",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "QpbDp",
+                          "name": "chip-Privat",
+                          "width": 140,
+                          "fill": "$nb-white",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "layout": "vertical",
+                          "padding": [
+                            9,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "h1M014",
+                              "name": "l",
+                              "fill": "$nb-ink",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Other",
+                              "textAlign": "center",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 14,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bMNqy",
+                      "name": "Form",
+                      "width": 560,
+                      "gap": 12,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "cwC89",
+                          "name": "EmailField",
+                          "width": "fill_container",
+                          "fill": "$nb-white",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "padding": [
+                            15,
+                            22
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "fzwXJ",
+                              "name": "ph",
+                              "fill": "$nb-muted",
+                              "content": "Your email",
+                              "fontFamily": "$nb-body",
+                              "fontSize": 16,
+                              "fontWeight": "normal"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "GFGTs",
+                          "type": "ref",
+                          "ref": "CQ1EC",
+                          "name": "SubmitBtn",
+                          "descendants": {
+                            "anJAE": {
+                              "content": "Join waitlist"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "f03GW",
+                  "type": "ref",
+                  "ref": "egFn2",
+                  "name": "nsp1",
+                  "layoutPosition": "absolute",
+                  "x": 1040,
+                  "y": 60,
+                  "width": 46,
+                  "height": 46,
+                  "fill": "$nb-lime"
+                },
+                {
+                  "id": "B7oAv",
+                  "type": "ref",
+                  "ref": "egFn2",
+                  "name": "nsp2",
+                  "layoutPosition": "absolute",
+                  "x": 1140,
+                  "y": 200,
+                  "width": 30,
+                  "height": 30,
+                  "fill": "$nb-pink"
+                },
+                {
+                  "id": "ZYy8y",
+                  "type": "ref",
+                  "ref": "vUurB",
+                  "name": "narr",
+                  "layoutPosition": "absolute",
+                  "x": 960,
+                  "y": 170,
+                  "width": 80,
+                  "height": 56,
+                  "rotation": 20,
+                  "fill": "#00000000",
+                  "stroke": "$nb-white"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Z9aSWc",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#1B1C1F",
+          "stroke": "$nb-ink",
+          "layout": "vertical",
+          "gap": 28,
+          "padding": [
+            56,
+            72
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "B8s45Q",
+              "name": "FootTop",
+              "width": "fill_container",
+              "gap": 40,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "HBhFa",
+                  "name": "FootLeft",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "tiK2V",
+                      "type": "ref",
+                      "ref": "n1mMF",
+                      "name": "FootLogo"
+                    },
+                    {
+                      "type": "text",
+                      "id": "L3YUFC",
+                      "name": "tag",
+                      "fill": "#B3AEA3",
+                      "textGrowth": "fixed-width",
+                      "width": 520,
+                      "content": "Homemade catering from real private kitchens. Cook from your own kitchen, accept orders that fit, get paid — launching in Hamburg.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZEttW",
+                      "name": "Socials",
+                      "gap": 10,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Tw9oG",
+                          "name": "soc-facebook",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "$nb-white",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "w6duRC",
+                              "name": "i",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "facebook",
+                              "library": "lucide",
+                              "fill": "$nb-ink"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "myqXy",
+                          "name": "soc-linkedin",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "$nb-white",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "Q7wdV",
+                              "name": "i",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "linkedin",
+                              "library": "lucide",
+                              "fill": "$nb-ink"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "AET9b",
+                          "name": "soc-twitter",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "$nb-white",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "G0u9AJ",
+                              "name": "i",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "twitter",
+                              "library": "lucide",
+                              "fill": "$nb-ink"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "zbHWu",
+                          "name": "soc-instagram",
+                          "width": 38,
+                          "height": 38,
+                          "fill": "$nb-white",
+                          "cornerRadius": 9999,
+                          "stroke": "$nb-ink",
+                          "strokeWidth": 2,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon",
+                              "id": "KEUKV",
+                              "name": "i",
+                              "width": 18,
+                              "height": 18,
+                              "icon": "instagram",
+                              "library": "lucide",
+                              "fill": "$nb-ink"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ZX63x",
+                  "name": "FootRight",
+                  "width": 220,
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nu7ig",
+                      "name": "rt",
+                      "fill": "$nb-lime",
+                      "content": "EXPLORE",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 13,
+                      "fontWeight": "700",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "X3VSI",
+                      "name": "f1",
+                      "fill": "$nb-white",
+                      "content": "How it works",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "rLnxF",
+                      "name": "f2",
+                      "fill": "$nb-white",
+                      "content": "Pathway",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "mWGeq",
+                      "name": "f3",
+                      "fill": "$nb-white",
+                      "content": "Verified Gate",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "bjbhd",
+                      "name": "f4",
+                      "fill": "$nb-white",
+                      "content": "Contact",
+                      "fontFamily": "$nb-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "AEEUZ",
+              "name": "Divider",
+              "fill": "#34353A",
+              "width": "fill_container",
+              "height": 1.5
+            },
+            {
+              "type": "frame",
+              "id": "J5BZhr",
+              "name": "FootBottom",
+              "width": "fill_container",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "UcqxC",
+                  "name": "copy",
+                  "fill": "#8C887F",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "© 2026 Caterists · Imprint · Privacy",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "wUzTG",
+                  "name": "cc",
+                  "fill": "$nb-lime",
+                  "content": "Looking for catering? →",
+                  "fontFamily": "$nb-body",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rectangle",
+      "id": "bhQf4",
+      "x": 6368,
+      "y": 0,
+      "name": "temp-cook-1",
+      "metadata": {
+        "type": "unsplash",
+        "username": "gasparzaldo",
+        "link": "https://unsplash.com/@gasparzaldo",
+        "author": "gaspar zaldo"
+      },
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "https://images.unsplash.com/photo-1718324865389-9e181fec53fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NjE3ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+        "mode": "fill"
+      },
+      "width": 400,
+      "height": 250
+    },
+    {
+      "type": "rectangle",
+      "id": "o9RAs",
+      "x": 6808,
+      "y": 0,
+      "name": "temp-cook-2",
+      "metadata": {
+        "type": "unsplash",
+        "username": "tavathamo",
+        "link": "https://unsplash.com/@tavathamo",
+        "author": "Tatiana Mokhova"
+      },
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "https://images.unsplash.com/photo-1737315544627-8f534c656201?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NjE3ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+        "mode": "fill"
+      },
+      "width": 400,
+      "height": 250
+    },
+    {
+      "type": "rectangle",
+      "id": "Ge2Uk",
+      "x": 7248,
+      "y": 0,
+      "name": "temp-cook-3",
+      "metadata": {
+        "type": "unsplash",
+        "username": "avoccoon",
+        "link": "https://unsplash.com/@avoccoon",
+        "author": "Alex Shih Mendez"
+      },
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "https://images.unsplash.com/photo-1702767617243-6c0f20229b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3ODA3NjE3ODR8&ixlib=rb-4.1.0&q=80&w=1080",
+        "mode": "fill"
+      },
+      "width": 400,
+      "height": 250
     }
   ],
   "variables": {
