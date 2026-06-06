@@ -1,0 +1,7 @@
+# Build/tooling noise — the static assets are COPYed explicitly in the Dockerfile.
+.git
+.DS_Store
+Dockerfile
+.dockerignore
+node_modules
+*.log
