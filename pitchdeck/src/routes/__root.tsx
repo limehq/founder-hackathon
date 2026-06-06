@@ -9,11 +9,11 @@ export const Route = createRootRoute({
     meta: [
       { charSet: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { title: 'Tablo Pitch Deck' },
+      { title: 'Caterists Pitch Deck' },
       {
         name: 'description',
         content:
-          'Tablo is a serious B2B pitch deck for last-minute team catering in Hamburg with verified supply, AI intake, and backup matching.',
+          'Caterists is a pitch deck for a verified homemade catering marketplace in Hamburg with AI intake, broadcast matching, first binding accept, and a Home-Pro pathway.',
       },
     ],
     links: [
